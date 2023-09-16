@@ -34,6 +34,7 @@ header img {
 header h1{
     color: rgb(255, 255, 255);
     grid-column: 3/5;
+    font-family: philosopher, sans-serif;
 }
 
 
@@ -64,11 +65,13 @@ main {
 }
 p {
     color: #ffffff;
+    font-family: Heebo,'Times New Roman', Times, serif;
 }
 main h2 {
     color: #000000;
     grid-column: 1/6;
     margin: 1em ;
+    font-family: philosopher, sans-serif;
     
 }
 
@@ -84,7 +87,7 @@ main section {
 }
 
 main ul {
-    list-style: none;
+    list-style-type: none;
 }
 .card {
     min-height: 200px;
@@ -128,4 +131,5 @@ footer p {
 #lastModified {
     color: #E9FA00;
     text-align: center;
+    font-family: philosopher, sans-serif;
 }
