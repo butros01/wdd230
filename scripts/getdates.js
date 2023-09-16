@@ -1,6 +1,6 @@
 /* VARIABLES */
 // Declare and instantiate a variable to hold the current year
-let currentYear = 2023
+let currentYear = new Date().getFullYear()
 
 // Place the value of the current year variable into the HTML file
 
