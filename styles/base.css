@@ -7,8 +7,8 @@
 * *
 *****************************************************************/
 *{
-    max-width: 500px;
-    margin: auto;
+    max-width: 800px; 
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -58,10 +58,13 @@ nav a {
 *****************************************************************/
 main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 600px;
-    align-items: center;
-
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #f5f8fc;
+    grid-gap: 1rem;
+    
 }
 p {
     color: #ffffff;
@@ -69,20 +72,19 @@ p {
 }
 main h2 {
     color: #000000;
-    grid-column: 1/6;
+    grid-column: 1/-1;
     margin: 1em ;
     font-family: philosopher, sans-serif;
     
 }
 
-main section {
-    grid-column: 1/6;
+section {
     border: 1px solid #0A050F;
     border-radius: 10px;
-    width:100%;
-    height:100%;
-    display:table;
-    margin:0 auto;
+    /* width:100%;
+    height:100%; */
+    /* display:table; */
+   
        
 }
 
@@ -97,7 +99,7 @@ main ul {
     font-size: 25px;
     margin: 0;
     border: 1px solid #0A050F   
-}
+} 
 main p {
     color: white;
 }
@@ -133,9 +135,3 @@ footer p {
     text-align: center;
     font-family: philosopher, sans-serif;
 }
-
-/****************************************************************
-*
-* Media Query *
-*
-*****************************************************************/
