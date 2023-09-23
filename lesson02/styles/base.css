@@ -3,7 +3,7 @@
 }
 
 html {
-    background-color: lightblue;
+    background-color: rgb(185, 199, 202);
 }
 
 body {
@@ -21,7 +21,7 @@ header {
 h1 {
     margin-bottom: 0.25em;
 }
-header > span {
+header span {
     font-size: medium;
     color: lightblue;
 }
@@ -30,7 +30,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
 }
 section {
@@ -39,29 +39,29 @@ section {
     border: solid 1px gray;
     overflow: hidden;
 }
-section * {
+section  {
     font-family: 'Glegoo', sans-serif;
 }
 h3 {
     margin: 0;
     font-family: 'Electrolize', sans-serif;
     padding: 10px;
-    /* text-align: center; */
+    text-align: center;
     background: #404E4D;
     color: white;
 }
-section > div {
-    padding: 0 10px;
+section  div {
+    padding: 0 15px;
 }
-section > div > span {
+section div  span {
     display: block;
 }
-section > div > * {
+section div {
     font-size: 1.05em;
 }
 section img {
-    width: calc(100% - 2px);
-    display: block;
+    width: 100%;
+    display: flex;
     margin: 0 auto;
     border: solid 1px gray;
     max-width: 320px;

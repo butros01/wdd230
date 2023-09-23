@@ -1,13 +1,14 @@
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 500px) {
     main {
         grid-template-columns: 1fr;
         grid-gap: 20px 0;
     }
     main > section {
         grid-column: 1;
-        width: 90%;
+        width: 100%;
         max-width: 450px;
         justify-self: center;
+        margin: 0 auto;
     }
     section img {
         max-width: 400px;
