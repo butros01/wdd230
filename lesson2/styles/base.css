@@ -39,8 +39,8 @@ section {
     border: solid 1px gray;
     overflow: hidden;
 }
-section  {
-    font-family: 'Glegoo', sans-serif;
+section *{
+    font-family: 'Roboto', sans-serif;
 }
 h3 {
     margin: 0;
