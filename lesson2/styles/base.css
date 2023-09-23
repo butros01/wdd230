@@ -64,7 +64,6 @@ section img {
     display: flex;
     margin: 0 auto;
     border: solid 1px gray;
-    max-width: 320px;
 }
 
 footer {
