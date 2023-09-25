@@ -87,8 +87,10 @@ section {
        
 }
 
-main ul {
+main ul li {
     list-style-type: none;
+    text-indent: 20px;
+    font-size: 15px;
 }
 .card {
     min-height: 200px;
@@ -100,7 +102,8 @@ main ul {
     border: 1px solid #0A050F   
 } 
 main p {
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 .card h3 {
     background-color: #04471C;
