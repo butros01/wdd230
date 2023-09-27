@@ -1,16 +1,37 @@
 @media screen and (min-width: 500px) {
+	/* nav {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		background-color: #29335C;
+	} */
+	/* nav a {
+		grid-column: 3/4;
+		color: white;
+		text-decoration: none;
+		padding: 10px; 
+	}
     nav {
         display: flex;
+		background-color: #29335C;
     }
 	nav ul {
 	display: flex;
 	}
 	nav ul li {
 		flex: 1 1 100%;
-	}
+	} */
 
 	main {
 		grid-template-columns: 4fr 1fr; 
 	}
-
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation {
+		flex-direction: row;
+	}
 }
