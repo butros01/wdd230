@@ -22,6 +22,7 @@ header {
     align-items: center;
     background-color: #0038A8;
     padding: 10px;
+    grid-gap: 20px
 }
 header img {
     width: 100%;
@@ -99,7 +100,10 @@ nav {
 	display: block;
     color: white;
 }
-
+.active{
+    background: #4B034F;
+    text-decoration: underline
+}
 .active::before {
 	content: "📍 ";
 }
@@ -171,7 +175,7 @@ main p {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
+    padding-top: 56%; /* 4:3 Aspect Ratio */
 }
   
   .responsive-iframe {
