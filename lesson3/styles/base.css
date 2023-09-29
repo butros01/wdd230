@@ -1,0 +1,92 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #0A050F;
+  --secondary-color: #FFFFFF ;
+  --accent1-color: #8DC133;
+  --accent2-color: #F8B807;
+  --accent3-color: #275DAD;
+  /* change the values below to your chosen font(s) */
+  --heading-font: Philosopher;
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #0A050F;  /* headlines on a white background */ 
+  --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #0A050F; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0A050F;
+  --nav-link-color: #0A050F;
+  --nav-background-color: #f8b807;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #0A050F;
+}
+  
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+section {
+  border: 10px solid #275DAD;
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+ul li {
+    text-align: left;
+    font-size: large;
+}
+ol li {
+  text-align: left;
+  font-size: 30px;
+}
+img {
+  display: inline-block;
+  margin: 0 auto;
+  /* min-width: 500px; */
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+  
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+  font-size: 1.5em;
+}
+header > h1, header > h2 {
+    color: var(--headline-color-on-color);
+}
+  
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-background-color);
+    padding: 1em;
+}
+
+footer {
+
+    background-color: #275DAD;
+    margin: 10px 0 10px 0 ;
+    padding: 15px;
+}
+
+#lastModified {
+    color: #E9FA00;
+    text-align: center;
+    font-family: philosopher, sans-serif;
+}
