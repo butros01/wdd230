@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butros - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This is WDD 230 - Web Frontend Development course assignment portal for Butros Kioko.">
+    <meta name="author" content=" Butros Kioko">
+    <meta property="og:title" content="Butros - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://unsplash.com/photos/R2QCr4LX0a0">
+    <meta property="og:url" content="https://butros01.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Philosopher&display=swapp" rel="stylesheet">
+    <!-- An alternative to hosting your own normalize or reset CSS file s -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="icon" href="../chamber/favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+            <a id = "logo-link" href="index.html">
+                <img class = "logo" src = "../chamber/images/site-logo.png" alt = "Nairobi Chamber Commerce">
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="../chamber/images/facebook-logo-icon.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../chamber/images/twitter-logo-icon.png" alt="twitter icon">
+            </a>
+        </div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation" >
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#" target="_blank">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#" target="_blank">Join</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <div id= "hero">
+        <div id="hero-box">
+            <img id="hero-img" src="../chamber/images/hero-img.jpg" alt="People enjoying rafting">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Have an Adventure</h1>
+            <div class="button-box">
+                <a class="join" href="#">Join Us</a>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="card"> 
+            <h3>Events</h3>
+        </section>
+        <section class="card">
+            <h3>Weather</h3>
+            <div id="weather"></div>
+	        <div id="pageVisits"></div>
+        </section>
+        <hr>
+        <h2>Business Spotlights</h2>
+        
+        <section class="smaller-card"> 
+            <h3>Lorem ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+        
+        <section class="smaller-card"> 
+            <h3>Lorem ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+        <section class="smaller-card"> 
+            <h3>Lorem ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy;<span id="year"></span> <br> Butros Kioko <br> Kenya 🌈</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/base.js"></script>
+</body>
+</html>
