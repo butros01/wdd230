@@ -46,6 +46,7 @@ body {
 
 .logo{
     width: 100px;
+    height: 0 auto;
     border-radius: 50%;
     padding: 10px;
 }
@@ -155,11 +156,15 @@ nav{
     
 }
 #hero-img{
-    width: 100%;
+    height: 358px;
+    width: 0 auto;
     box-sizing: border-box;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+}
+#hero-msg h1 {
+    font-family: Philosopher;
 }
 .button-box{
     text-align: center;
@@ -176,6 +181,10 @@ nav{
 .join:hover {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
+}
+.social-icons img {
+    width: 48px;
+    height: 48px;
 }
 /****************************************************************
 *
