@@ -78,7 +78,7 @@ nav{
 
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid var(--primary-color);
 	padding: 3px 7px 6px;
 	background-color: var(--accent2-color);
 	color: var(--primary-color);
@@ -233,10 +233,10 @@ main ul li {
     text-decoration: none;
     font-size: 25px;
     margin: 0;
-    border: 1px solid #0A050F   
+    border: 1px solid var(--primary-color)   
 } 
 main p {
-    color: rgb(0, 0, 0);
+    color: var(--primary-color);
     font-size: 20px;
 }
 .card h3 {
