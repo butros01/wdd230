@@ -29,7 +29,6 @@
 	}
     .navigation {
         list-style: none;
-        /* background-color: var(--accent1-color); */
         color: var(--primary-color)
     }
     .active::before {
@@ -42,7 +41,5 @@
     main {
         grid-template-columns: 1fr 1fr;
     }
-    /* main  section:nth-child(5) {
-        grid-column: 1/3;
-    } */
+    
 }
