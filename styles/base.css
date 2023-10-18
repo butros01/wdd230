@@ -6,10 +6,11 @@
 * *
 *****************************************************************/
 *{
-    max-width: 800px; 
+    max-width: 1200px; 
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 
 /****************************************************************
 * *
@@ -188,7 +189,39 @@ main p {
     height: 100%;
     border: none;
 }
-  
+.hero {
+    grid-column: 1/-1;
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+}
+.hero picture {
+    width: 100%;
+    height: auto;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
 /****************************************************************
 *
 * footer *
