@@ -47,7 +47,7 @@ body {
 
 .logo{
     width: 98px;
-    height: auto 86px;
+    height: 86px;
     border-radius: 50%;
     padding: 10px;
 }
@@ -200,8 +200,8 @@ nav{
     color: var(--accent2-color);
 }
 .social-icons img {
-    width: auto 24px;
-    height: auto 24px;
+    width: 24px;
+    height: 24px;
 }
 /****************************************************************
 *
