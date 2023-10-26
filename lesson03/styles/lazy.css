@@ -1,16 +1,13 @@
 main{
-    margin: 0 auto;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 5px; */
+    grid-gap: 5px;
+    max-width: 480px;
 }
 img {
     width: 100%;
-    animation: fade 15s;
     margin: 5px;
+    animation: fade 5s;
 }
 @keyframes fade {
     0% {
@@ -20,6 +17,6 @@ img {
         opacity: 1;
     }
 }
-h1 {
+/* h1 {
     text-align: center;
-}
+} */
