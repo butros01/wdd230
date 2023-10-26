@@ -206,7 +206,7 @@ main p {
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
 }
-.herolabel h2 {
+.herolabel p {
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
