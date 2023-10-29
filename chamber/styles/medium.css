@@ -41,5 +41,17 @@
     main {
         grid-template-columns: 1fr 1fr;
     }
-    
+    #content img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    #discover-page {
+        grid-template-columns: 350px auto;
+    }
+    #side-bar {
+        grid-column: 1;
+    }
+    #content {
+        grid-column: 2;
+        max-width: 640px;
+    }
 }

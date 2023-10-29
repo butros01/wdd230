@@ -15,7 +15,8 @@ let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 //Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
-} else {
+} 
+else {
 	visitsDisplay.textContent = `It is first visit. 🥳 Welcome!`;
 }
 
