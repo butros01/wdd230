@@ -16,7 +16,7 @@ document.querySelector('#lastModified').textContent = `Last Modification:  ${las
 /* DISCOVER - LAST VISIT */
 
 let lastVisit = localStorage.getItem("lastVisit")|| 0;
-const lastVisitElement = document.querySelector("#lastVisit p");
+const lastVisitElement = document.querySelector("#lastVisit span");
 let currentDate = new Date();
 let previousDate = new Date(lastVisit);
 let timeDifference = currentDate.getTime() - previousDate.getTime();
