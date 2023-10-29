@@ -296,7 +296,10 @@ hr {
     max-width: 1200px;
     justify-content: center;
 }
-
+#discover-page h1 {
+    justify-self: center;
+    grid-column: 1/-1;
+}
 
 .discover-card {
     min-height: 200px;
@@ -323,6 +326,7 @@ hr {
         opacity: 1;
     }
 }
+
 /****************************************************************
 *
 * footer *
