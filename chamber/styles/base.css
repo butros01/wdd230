@@ -322,6 +322,15 @@ hr {
         opacity: 1;
     }
 }
+#discover-page h1 {
+    color: var(--primary-color);
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1rem;
+    margin: 1em ;
+    font-family: philosopher, sans-serif;
+    background-color: #8DC133;
+}
 
 /****************************************************************
 *
