@@ -37,7 +37,7 @@
             </a>
         </div>
         <nav>
-            <button id="menu"></button>
+            <button id="menu" aria-label="menu"></button>
             <ul class="navigation" >
                 <li><a class="active" href="/chamber/index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -71,13 +71,10 @@
         <section class="card">
             <h3>Weather</h3>
             <div id="weather">
-                <h4>Temperature: <input type="number" id="temperature" value="10">°C</h4>
-                <h4>Wind Speed: <input type="number" id="wind-speed" value="12">Km/h</h4>
-                <section id="wind-chill">
-                    <h4>Wind Chill: <span></span></h4>
-                </section>
-            </div>
-            <div id="pageVisits"></div>
+            <label for="temperature">Temperature:</label><input type="number" id="temperature" value="10">°C
+            <label for="wind-speed"><br>Wind speed: </label><input type="number" id="wind-speed" value="12">Km/h
+            <h4 id="wind-chill"><br>Wind Chill: <span></span></h4>
+            <h4><span class="label"><br>Page Visits: </span><span id="pageVisits"></span></h4>
         </section>
         <hr>
         <h2 class="dark">Business Spotlights</h2>
