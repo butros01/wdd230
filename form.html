@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Philosopher&display=swapp" rel="stylesheet">
@@ -25,12 +26,36 @@
         </ul>
     </nav>
     <main>
-        <form action="b@yopmail.com">
-            <label id="userName"> Username <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
-            <label id="passWord"> Password <input type="text" id="test" name="test" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$" title="8 to 20 characters inclusive with at least on ne number, one special character, one upper case and one lower case letter.">
-            <label id="userName"> Password <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
-            <label id="userName"> Email <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
-            <label id="userName"> Page Rating<input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
+        <form action=>
+           
+            <label for="userName"> Username </label>
+            <input type="text" id="userName" name="userName" pattern="[A-Za-z]*" required></label>
+            
+            <label for="pwd" > Password </label>
+            <input type="password" id="pwd" name="pwd" pattern="[A-Za-z]*" title="8 or more characters (AlphaNumeric)">
+            <label for="pwd2">Password:</label>
+            <input type="password" id="pwd2" name="pwd2"></label>
+
+            <div id="formmessage"></div>
+            <label for="email"> Email </label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui+\.edu$" title="Please enter a valid email address"></label>
+           
+            <label for="rating">INPUT: range, min, max, datalist, required</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
             <input type="submit" value="Join our Community" class="submitBtn" >
         </form>
     </main>
@@ -39,5 +64,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
