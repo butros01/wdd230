@@ -26,7 +26,12 @@
     </nav>
     <main>
         <form action="b@yopmail.com">
-            <label for="userName"> Username</label><input type="text" id="alpha" name="alpha" required pattern="[A-Za-z]*">
+            <label id="userName"> Username <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
+            <label id="passWord"> Password <input type="text" id="test" name="test" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$" title="8 to 20 characters inclusive with at least on ne number, one special character, one upper case and one lower case letter.">
+            <label id="userName"> Password <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
+            <label id="userName"> Email <input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
+            <label id="userName"> Page Rating<input type="text" id="userName" name="userName" required pattern="[A-Za-z]*"></label>
+            <input type="submit" value="Join our Community" class="submitBtn" >
         </form>
     </main>
     <footer>
