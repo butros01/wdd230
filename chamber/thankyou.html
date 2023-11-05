@@ -50,46 +50,17 @@
             <span class="slider"></span>
         </label>
     </header>
-    <main id="joinUs">
-        <h2>Join Nairobi Chamber of Commerce</h2>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
-                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
-            </fieldset>
-
-            <fieldset class="memberlevels">
-                <legend>Membership Level</legend>
-                <div class="membership">
-                    <h3>Select a Membership level</h3>
-                    <p><b></b><em>Select one to see membership information</em><b></b></p> 
-                    <label class="sbs"><input type="radio" name="membership" value="np" onclick="showMembershipInfo('np')"> NP Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
-                </div>
-                <div class="membership-info">
-            </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                </div>
-                <label class="top">Business Name*<input type="text" name="bussname" required></label>
-                <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
-                <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
-                <input type="hidden" id="hiddenDate" name="hiddenDate">
-            </fieldset>
-            <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
-        </form>
-
+    <main id="thankyou">
+        <div>
+            <h2>Thank you for reaching out!</h2>
+            <p>We are now processing your details. One of our support 
+                member will get in touch with you via your submited <b>email</b>.</p>
+        </div>
+    </main>
     <footer>
         <p> &copy;<span id="year"></span> <br> Butros Kioko <br> Kenya 🌈</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="/chamber/scripts/join.js"></script>
-    <script src="/chamber/scripts/base.js"></script>
-    <script src="/chamber/scripts/getdates.js"></script>
+    <script src="scripts/base.js"></script>
 </body>
 </html>

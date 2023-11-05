@@ -54,4 +54,7 @@
         grid-column: 2;
         max-width: 640px;
     }
+    #joinUs {
+        display: block;
+    }
 }
