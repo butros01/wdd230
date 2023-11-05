@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nairobi Chamber of Commerce</title>
-    <meta name="description" content="The Nairobi Chamber of Commerce provides a platform for local businesses 
+    <title>Join Nairobi Chamber of Commerce</title>
+    <meta name="description" content="We are happy to see you joining us. We typically process your request with a day. Welcome!""
     to showcase their products and services, enhancing their visibility and 
     attracting potential customers.">
     <meta name="author" content=" Butros Kioko">
@@ -46,7 +46,7 @@
             </ul>
         </nav>  
         <label for="switch" class="switch">
-            <input type="checkbox" name="checkbox">
+            <input type="checkbox" id="switch" name="checkbox">
             <span class="slider"></span>
         </label>
     </header>
@@ -71,11 +71,10 @@
                     <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
                     <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
                 </div>
-                <div class="membership-info">
+                <div class="membership-info"> </div>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
-                </div>
                 <label class="top">Business Name*<input type="text" name="bussname" required></label>
                 <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
                 <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
@@ -83,7 +82,7 @@
             </fieldset>
             <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
         </form>
-
+    </main>
     <footer>
         <p> &copy;<span id="year"></span> <br> Butros Kioko <br> Kenya 🌈</p>
         <p id="lastModified"></p>
