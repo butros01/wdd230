@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce</title>
+    <meta name="description" content="The Nairobi Chamber of Commerce provides a platform for local businesses 
+    to showcase their products and services, enhancing their visibility and 
+    attracting potential customers.">
+    <meta name="author" content=" Butros Kioko">
+    <meta property="og:title" content="Butros - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unsplash.com/photos/R2QCr4LX0a0">
+    <meta property="og:url" content="https://butros01.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Philosopher&display=swapp" rel="stylesheet">
+    <!-- An alternative to hosting your own normalize or reset CSS file s -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="icon" href="../chamber/favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+            <a id = "logo-link" href="index.html">
+                <img class = "logo" src = "../chamber/images/site-logo.webp" alt = "Nairobi Chamber Commerce">
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="../chamber/images/facebook.webp" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../chamber/images/twitter.webp" alt="twitter icon">
+            </a>
+        </div>
+        <nav>
+            <button id="menu" aria-label="menu"></button>
+            <ul class="navigation" >
+                <li><a class="active" href="/chamber/index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#" target="_blank">Join</a></li>
+            </ul>
+        </nav>  
+        <label for="switch" class="switch">
+            <input type="checkbox" name="checkbox">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <div class="hero">
+        <picture>
+            <source srcset="../chamber/images/hero-small.webp" media="(max-width: 640px)">
+            <source srcset="../chamber/images/hero-medium.webp" media="(max-width: 900px)">
+            <img src="../chamber/images/hero-large.webp" alt="Salt lake temple" width="1500" height="750">
+        </picture>
+        <div class="herolabel">
+            <h1 class="home-title">Nairobi Chamber of Commerce</h1>
+            <div class="button-box">
+                <a class="join" href="#">Join Us</a>
+            </div>
+        </div>
+    </div>
+    <main>
+       
+
+    <footer>
+        <p> &copy;<span id="year"></span> <br> Butros Kioko <br> Kenya 🌈</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
