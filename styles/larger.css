@@ -12,4 +12,7 @@
 	.navigation {
 		flex-direction: row;
 	}
+	.thanks{
+		display: block;
+	}
 }
