@@ -18,6 +18,7 @@
     <header>
         <img src="images/butros-kioko-img.webp" alt="Butros in car">
         <h1>Butros Kioko</h1>
+        <div id="formmessage"></div>
     </header>
     <nav>
         <button id="menu" aria-label="menu"></button>
@@ -31,35 +32,37 @@
     </nav>
     <main>
         <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Usename*<input type="text" name="userName" id="userName" pattern="[a-zA-Z]*" required></label>
+                <label class="top">Password*<input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="8 or more characters (AlphaNumeric)" required></label>
+                <label class="top">Confirm Password*<input type="password" id="pwd2" name="pwd2" required></label>
+                <label class="top">Email*<input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[byui.\-]+\.[edu]{3}$" title="Please enter a valid email address with @byui.edu" required></label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Rate Your Satisfaction with this Page</legend>
+                <div>
+                    <h3>IN Scale of 10 Rate Us</h3>
+                    <p><b></b><em>Select one to see membership information</em><b></b></p> 
+                    <label class="sbs"><input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                    <div id="rangevalue">0</div>
+                </fieldset>
            
-            <label for="userName"> Username </label>
-            <input type="text" id="userName" name="userName" pattern="[a-zA-Z]*" required></label>
             
-            <label for="pwd" > Password </label>
-            <input type="password" id="pwd" name="pwd" pattern="[a-zA-Z0-9]{8}" title="8 or more characters (AlphaNumeric)" required>
-            <label for="pwd2">Password:</label>
-            <input type="password" id="pwd2" name="pwd2" required></label>
-
-            <div id="formmessage"></div>
-            <label for="email"> Email </label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address with @byui.edu" required></label>
-           
-            <label for="rating">IN Scale of 10 Rate Us</label>
-            <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
-            <datalist id="rangevalues">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
-            <div id="rangevalue">0</div>
             <input type="submit" value="Join our Community" class="submitBtn" >
         </form>
     </main>
@@ -67,7 +70,7 @@
         <p> &copy;<span id="year"></span> <br> Butros Kioko <br> Kenya 🌈</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="/scripts/getdates.js"></script>
+    <script src="/scripts/form.js"></script>
 </body>
 </html>
