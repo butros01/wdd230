@@ -76,6 +76,9 @@ nav{
     padding: 10px;
 
 }
+.switch {
+    display: none;
+}
 
 #menu {
 	font-size: 1.5rem;
