@@ -53,10 +53,10 @@
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
-                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="top">First Name*<input type="text" name="fname" id="lastName" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" id="firstName" required></label>
+                <label class="top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" id="phone" required></label>
             </fieldset>
 
             <fieldset class="memberlevels">
@@ -64,18 +64,18 @@
                 <div class="membership">
                     <h3>Select a Membership level</h3>
                     <p><b></b><em>Select one to see membership information</em><b></b></p> 
-                    <label class="sbs"><input type="radio" name="membership" value="np" onclick="showMembershipInfo('np')"> NP Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="np" id="np" onclick="showMembershipInfo('np')"> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" id="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" id="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" id="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
                 </div>
                 <div class="membership-info"> </div>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
-                <label class="top">Business Name*<input type="text" name="bussname" required></label>
-                <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
-                <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
+                <label class="top">Business Name*<input type="text" name="bussname" id="businessName" required></label>
+                <label class="top">Business Position<input type="text" name="position" id="businessPosition" pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="top">Briefly describe your business<textarea name="description" id="bussinessDesc" cols="30" rows="7"></textarea></label>
                 <input type="hidden" id="hiddenDate" name="hiddenDate">
             </fieldset>
             <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
