@@ -5,6 +5,9 @@
 * default properties for all pages *
 * *
 *****************************************************************/
+:root {
+    --primary-color: #0A050F;
+}
 *{
     max-width: 1200px; 
     margin: 0 auto;
@@ -271,7 +274,7 @@ form fieldset {
 }
 
 form legend {
-    color: var(#000);
+    color: var(--primary-color);
     margin: 0 1rem;
     padding: 0.5rem;
 }
