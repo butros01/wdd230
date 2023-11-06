@@ -77,7 +77,7 @@ nav{
 
 }
 .switch {
-    display: none;
+    display: flex;
 }
 
 #menu {
