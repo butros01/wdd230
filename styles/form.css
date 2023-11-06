@@ -6,7 +6,7 @@ body {
 h1 {
 	font-size: 1.75rem;
 	color: navy;
-	border-bottom: 1px solid #bbb;
+	
 }
 
 hr {
@@ -55,7 +55,7 @@ form fieldset {
 }
 
 form legend {
-    color: #445ba9;
+    color: var(#000);
     margin: 0 1rem;
     padding: 0.5rem;
 }
