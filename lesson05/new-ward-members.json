@@ -1,0 +1,23 @@
+{
+    "familyName" : "Kioko",
+    "dateMoved" : "11/8/2023",
+    "numberOfRecords" : 3,
+    "bishopricVisited" : true,
+    "members" : [
+      {
+        "name" : "Nelson Kioko",
+        "Gender" : "Male",
+        "birthDate" : 1990
+      },
+      {
+        "name" : "Winfred Kioko",
+        "Gender" : "Female",
+        "birthDate" : 1993
+      },
+      {
+        "name" : "Benson Kioko",
+        "Gender" : "Male",
+        "birthDate" : 1996
+      }
+    ]
+  }
