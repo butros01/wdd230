@@ -1,0 +1,28 @@
+body {
+    font-size: 16px;
+    font-family: Philosopher, Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    
+  }
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+  }
+main section {
+    max-width: 600px;
+    height: auto;
+    background-color: lightskyblue;
+    background-color: lightcyan; 
+    padding: 1rem;
+    margin: 1.5em;
+    box-shadow: 1px 1px 5px 1px black
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
