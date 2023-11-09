@@ -1,0 +1,166 @@
+{"lessons" : [
+    {
+        "lesson" : "01",
+        "links" :[
+            {
+                "url": "./lesson01/holygrail.html",
+                "title": "Holygrail"
+            },
+
+            {
+                "url": "https://codepen.io/Butros/pen/poqPdxM",
+                "title": "JS Pen"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "02",
+        "links" :[
+            {
+                "url": "./lesson2/design-principles.html",
+                "title": "Desing Principles"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "03",
+        "links" :[
+            {
+                "url": "./lesson03/images/combinators-exercise.png",
+                "title": "CSS Combinators (Screenshot)"
+            },
+
+            {
+                "url": "https://codepen.io/Butros/pen/GRPxNvv",
+                "title": "CSS Pseudo-Elements"
+            },
+
+            {
+                "url": "https://codepen.io/Butros/pen/zYyWoQr",
+                "title": "Responsive Menu"
+            },
+
+            {
+                "url": "./lesson03/chamber-site-plan.html",
+                "title": "Chamber Site plan"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "04",
+        "links" :[
+            {
+                "url": "https://codepen.io/Butros/pen/zYyJQod",
+                "title": "CSS Pseudo-Classes"
+            },
+            
+            {
+                "url": "./chamber/index.html",
+                "title": "Chamber Home Page"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "05",
+        "links" :[
+            {
+                "url": "./lesson05/bom.html",
+                "title": "DOM Manipulation"
+            },
+
+            {
+                "url": "./chamber/index.html",
+                "title": "Chamber Home Page"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "06",
+        "links" :[
+            {
+                "url": "./lesson06/images/landscape.webp",
+                "title": "WebP Image File Format"
+            },
+
+            {
+                "url": "./lesson06/responsive-images.html",
+                "title": "Responsive Images: srcset"
+            },
+
+            {
+                "url": "./chamber/index.html",
+                "title": "Chamber Home Page"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "07",
+        "links" :[
+            {
+                "url": "./lesson03/lazyload.html",
+                "title": "Lazy Load Overview"
+            },
+
+            {
+                "url": "./lesson07/bom.html",
+                "title": "Web Storage API - localStorage"
+            },
+
+            {
+                "url": "./chamber/discover.html",
+                "title": "Chamber Discover Page"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "08",
+        "links" :[
+            {
+                "url": "./lesson08/tablebuild.html",
+                "title": "HTML Tables for Data Presentation"
+            },
+
+            {
+                "url": "./form-start/index.html",
+                "title": "Form Sample"
+            },
+
+            {
+                "url": "form.html",
+                "title": "Assignment: Form Build"
+            },
+
+            {
+                "url": "./chamber/join.html",
+                "title": "Chamber Join page"
+            }
+        ]
+    },
+
+    {
+        "lesson" : "09",
+        "links" :[
+            {
+                "url": "./lesson05/new-ward-members.json",
+                "title": "New Ward Members JSON"
+            },
+
+            {
+                "url": "./lesson09/prophets.html",
+                "title": "The Fetch API | Latter-day Prophets"
+            },
+
+            {
+                "url": " ",
+                "title": "Collaboration Activity - JSON Menu"
+            }
+        ]
+    }
+]}
