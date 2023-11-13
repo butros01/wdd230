@@ -1,0 +1,95 @@
+{
+    "business": [
+        {
+            "img":"best-soccer.webp",
+            "name":"Best Soccer",
+            "address":"Rioja 150, Funes",
+            "phone":"+549 341 548 652",
+            "url":"www.bestsoccer.com",
+            "membership":"bronze",
+            "description":"Let's play soccer!",
+            "email":"contact@bestsoccer.com"
+        },
+        {
+            "img":"fastest-taxi.webp",
+            "name":"Fastest Taxi",
+            "address":"Santa Fe 190, Funes",
+            "phone":"+549 341 525 456",
+            "url":"www.fastestaxi.com",
+            "membership":"silver",
+            "description":"Being Late? Never",
+            "email":"contact@fastestaxi.com"
+        },
+        {
+            "img":"cool-watches.webp",
+            "name":"Cool Watches",
+            "address":"Santa Fe 1450, Funes",
+            "phone":"+549 341 456 132",
+            "url":"www.coolwatches.com",
+            "membership":"gold",
+            "description":"What time is it?",
+            "email":"contact@coolwatches.com"
+        },
+        {
+            "img":"tasty-biscuits.webp",
+            "name":"Tasty Biscuits",
+            "address":"San Lorenzo 380, Funes",
+            "phone":"+549 341 298 456",
+            "url":"www.biscuits.com",
+            "membership":"gold",
+            "description":"Hmm tasty!",
+            "email":"contact@tastybiscuits.com"
+        },
+        {
+            "img":"laptop-ready.webp",
+            "name":"Laptop Ready!",
+            "address":"24 Septiembre 980, Funes",
+            "phone":"+549 341 980 899",
+            "url":"www.laptopready.com",
+            "membership":"silver",
+            "description":"Laptop ready for you!",
+            "email":"contact@laptopready.com"
+        },
+        {
+            "img":"fridge-repairs.webp",
+            "name":"Fridge Repairs",
+            "address":"San Jorge 1024, Funes",
+            "phone":"+549 341 525 655",
+            "url":"www.fsrepairs.com",
+            "membership":"bronze",
+            "description":"Cold and working!",
+            "email":"contact@fridgerepairs.com"
+        },
+        {
+            "img":"comfortable-chairs.webp",
+            "name":"Comfortable Chairs",
+            "address":"Arijon 555, Funes",
+            "phone":"+549 341 525 177",
+            "url":"www.chairs.com",
+            "membership":"bronze",
+            "description":"Sit down!",
+            "email":"contact@comfortablechairs.com"
+        },
+        {
+            "img":"juana-cakes.webp",
+            "name":"Juana Cakes",
+            "address":"San Lorenzo 322, Funes",
+            "phone":"+549 341 999 789",
+            "url":"www.juanacakes.com",
+            "membership":"np",
+            "description":"Best cakes!",
+            "email":"contact@juanacakes.com"
+        },
+        {
+            "img":"pedro-puertas.webp",
+            "name":"Pedro Puertas",
+            "address":"Favaloro 422, Funes",
+            "phone":"+549 341 525 416",
+            "url":"www.pedropuertas.com",
+            "membership":"gold",
+            "description":"Best doors!",
+            "email":"contact@bestdoors.com"
+        }
+        
+    ]
+}
