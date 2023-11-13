@@ -6,21 +6,27 @@ const card = document.querySelector('.card');
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json(); 
-    console.log(displayLinks(data.lessons));
+    displayLinks(data.lessons);
 
   }
   
 getLinks();
 
-const displayLinks = (lessons) => {
-    lessons.forEach((lesson) => {
+const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
         // Create elements to add to the div.cards element
-        let week = document.createElement('li'); 
+        let weekLesson = document.createElement('li'); 
 
         // Build the li content 
-        week.textContent = `Week ${lesson.lesson} || ${lesson.links}`; 
-
+        weekLesson.textContent = `Week ${week.lesson} ||`; 
         // Append the section(card) with the created elements
-        card.appendChild(week); 
+        let linkList = week.links;
+        linkList.forEach((link => {
+            const anchor= document.createElement("a"); 
+            anchor.setAttribute("href", link.url); anchor.setAttribute("target", "_blank"); 
+            anchor.innerHTML = `${link.title} | `; 
+            weekLesson.appendChild(anchor);
+        }));
+        card.appendChild(weekLesson); 
     });
 }
