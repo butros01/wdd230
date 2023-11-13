@@ -1,94 +1,74 @@
 {
     "business": [
         {
-            "img":"best-soccer.webp",
-            "name":"Best Soccer",
-            "address":"Rioja 150, Funes",
-            "phone":"+549 341 548 652",
-            "url":"www.bestsoccer.com",
+            "img":"jumia.webp",
+            "name":"Jumia Store",
+            "address":"hendred road, Nairobi",
+            "phone":"254791170875",
+            "url":"www.jumia.com",
             "membership":"bronze",
-            "description":"Let's play soccer!",
-            "email":"contact@bestsoccer.com"
+            "description":"Shop from the Best ",
+            "email":"contact@jumia.co.ke"
         },
         {
-            "img":"fastest-taxi.webp",
-            "name":"Fastest Taxi",
-            "address":"Santa Fe 190, Funes",
-            "phone":"+549 341 525 456",
-            "url":"www.fastestaxi.com",
+            "img":"bidco.webp",
+            "name":"Bidco Limited",
+            "address":"Thika Road, Nairobi",
+            "phone":"254792300310",
+            "url":"www.bidcoltd.com",
             "membership":"silver",
-            "description":"Being Late? Never",
-            "email":"contact@fastestaxi.com"
+            "description":"Five Star in Sustainability",
+            "email":"contact@bidcoltd.com"
         },
         {
-            "img":"cool-watches.webp",
-            "name":"Cool Watches",
-            "address":"Santa Fe 1450, Funes",
-            "phone":"+549 341 456 132",
-            "url":"www.coolwatches.com",
+            "img":"uniclever.webp",
+            "name":"Uniclever Kenya",
+            "address":"Moi avenue, Kencom 123, Nairobi",
+            "phone":"254700490004",
+            "url":"www.unileverkenya.com",
             "membership":"gold",
-            "description":"What time is it?",
-            "email":"contact@coolwatches.com"
+            "description":"What do you want to wash?",
+            "email":"contact@unilever.com"
         },
         {
-            "img":"tasty-biscuits.webp",
-            "name":"Tasty Biscuits",
-            "address":"San Lorenzo 380, Funes",
+            "img":"kilimall.webp",
+            "name":"Kilimall E-Commerce",
+            "address":"Universty way , Nairobi",
             "phone":"+549 341 298 456",
-            "url":"www.biscuits.com",
+            "url":"www.kilimall.com",
             "membership":"gold",
-            "description":"Hmm tasty!",
-            "email":"contact@tastybiscuits.com"
+            "description":"Where do you deliver?",
+            "email":"contact@kilimall.com"
         },
         {
-            "img":"laptop-ready.webp",
-            "name":"Laptop Ready!",
-            "address":"24 Septiembre 980, Funes",
-            "phone":"+549 341 980 899",
-            "url":"www.laptopready.com",
+            "img":"safaricom.webp",
+            "name":"Safaricom PLC!",
+            "address":"westlands Lions Place, Nairobi",
+            "phone":"2547220000000",
+            "url":"www.safaricom.co.ke",
             "membership":"silver",
-            "description":"Laptop ready for you!",
-            "email":"contact@laptopready.com"
+            "description":"let get you Connected",
+            "email":"contact@safaricom.co.ke"
         },
         {
-            "img":"fridge-repairs.webp",
-            "name":"Fridge Repairs",
-            "address":"San Jorge 1024, Funes",
-            "phone":"+549 341 525 655",
+            "img":"royal-media.webp",
+            "name":"Royal Media Services",
+            "address":"State House Road, Nairobi",
+            "phone":"2547222196196",
             "url":"www.fsrepairs.com",
             "membership":"bronze",
             "description":"Cold and working!",
             "email":"contact@fridgerepairs.com"
         },
         {
-            "img":"comfortable-chairs.webp",
+            "img":"kina-travels.webp",
             "name":"Comfortable Chairs",
-            "address":"Arijon 555, Funes",
-            "phone":"+549 341 525 177",
-            "url":"www.chairs.com",
+            "address":"hendred Avenue, Fort Place, Nairobi",
+            "phone":"254799827564",
+            "url":"www.kinatoursandtravel.com",
             "membership":"bronze",
-            "description":"Sit down!",
-            "email":"contact@comfortablechairs.com"
-        },
-        {
-            "img":"juana-cakes.webp",
-            "name":"Juana Cakes",
-            "address":"San Lorenzo 322, Funes",
-            "phone":"+549 341 999 789",
-            "url":"www.juanacakes.com",
-            "membership":"np",
-            "description":"Best cakes!",
-            "email":"contact@juanacakes.com"
-        },
-        {
-            "img":"pedro-puertas.webp",
-            "name":"Pedro Puertas",
-            "address":"Favaloro 422, Funes",
-            "phone":"+549 341 525 416",
-            "url":"www.pedropuertas.com",
-            "membership":"gold",
-            "description":"Best doors!",
-            "email":"contact@bestdoors.com"
+            "description":"Explore the World",
+            "email":"contact@kinatoursandtravel.com"
         }
         
     ]
