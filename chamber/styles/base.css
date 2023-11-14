@@ -502,7 +502,7 @@ footer p {
 
 .grid section > img{
     width: 100%;
-    height: 180px auto ;  
+    height: 180 ;  
 }
 .list img {display: none;}
 .directory-main .list section {
