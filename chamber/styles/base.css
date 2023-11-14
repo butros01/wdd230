@@ -451,6 +451,120 @@ footer p {
 
 /****************************************************************
 *
+* Directory *
+*
+*****************************************************************/
+.directory-main {
+    display: grid;
+    grid-template-columns: 1fr;
+	margin: 0 auto;
+    padding: 2rem;
+	background-color: var(--accent2-color);
+}
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: var(--accent3-color);
+	text-align: center;
+}
+.directory-main .grid {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 5px;  
+}
+
+.grid  section {
+    width: auto;
+    height: auto;
+    background-color: var(--accent1-color); 
+    padding: 1rem;
+    margin: 1.5em;
+    box-shadow: 1px 1px 5px 1px var(--primary-color)
+}
+.grid > section > div > h2 {
+    margin-top: .2rem;
+    margin-bottom: .8rem;
+    text-shadow: 1px 2px 8px white;
+}
+.grid section > .directory-phone {
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+.grid section > .directory-address {margin-bottom: .5rem;}
+/* IF LIST */
+.directory-main .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list img {display: none;}
+.directory-main .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+.directory-main .list section:nth-child(odd) {
+    background-color: var(--accent1-color);
+}
+.directory-main .list section:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+.directory-main .list section:last-child {
+    margin-bottom: 3rem;
+}
+.directory-main a, .directory-main .directory-phone, .directory-main .directory-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .5rem;
+    font-weight: 800;
+    font-size: 25px;
+}
+.home-spotlight h2, .directory-main h2 {
+    font-size: 1.3rem;
+    margin-bottom: .2rem;
+}
+.home-spotlight section div, .directory-main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-spotlight section div h3  , .directory-main section div h3 {
+    margin: 0 auto;
+    font-size: .7rem;
+    font-weight: normal;
+    background-color: var(--accent3-color);
+    padding: .2rem .5rem;
+    border-radius: 7px;
+}
+.home-spotlight section div img {
+    margin-top: 1rem;
+}
+.home-spotlight .np, .directory-main .np {
+    color: var(--secondary-color);
+}
+.home-spotlight .bronze, .directory-main .bronze {
+    color: var(--accent2-color);
+    font-size: 25px;
+    
+}
+
+.home-spotlight .silver, .directory-main .silver {
+    color: var(--accent2-color);
+    font-size: 25px;
+}
+.home-spotlight .gold, .directory-main .gold {
+    color: var(--accent2-color);
+    font-size: 25px;
+}
+
+
+/****************************************************************
+*
 * toggle switch *
 *
 *****************************************************************/

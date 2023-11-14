@@ -38,7 +38,7 @@
         display: none;
     }
     
-    main {
+    #home {
         grid-template-columns: 1fr 1fr;
     }
     #content img:hover {
@@ -57,4 +57,13 @@
     #joinUs {
         display: block;
     }
+
+    /* -----------------------Directory-------------------- */
+    /* .directory-main .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .directory-main .title {grid-row: 1;}
+    .directory-main .menu {grid-row: 2;}
+    .directory-main .list, .directory-main .grid {grid-row: 3;} */
+
 }

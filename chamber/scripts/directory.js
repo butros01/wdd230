@@ -26,7 +26,7 @@ async function getBusinessData() {
     const response = await fetch(urlBusiness);
     const data = await response.json();
     const sortedBusiness = sortBusinessByMembership(data.business);
-    if (checkIfDirectory) {
+    if (checkIfDirectory) {  
         displayBusiness("directory", sortedBusiness);
     }
     if (checkIfMain){
