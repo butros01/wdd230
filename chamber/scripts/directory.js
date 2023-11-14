@@ -72,7 +72,7 @@ function displayBusiness(webpage, business) {
             phone.textContent = `${business.phone}`;
             url.textContent = `${business.url}`;
             
-            img.setAttribute("src", `images/${business.img}`);
+            img.setAttribute("src", `../chamber/images/${business.img}`);
             img.setAttribute("alt", `Logo of ${business.name}`)
             h3.setAttribute("class", setMembershipColor(business.membership));
             address.setAttribute("class", "directory-address");

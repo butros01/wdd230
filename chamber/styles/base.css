@@ -497,6 +497,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .list img {display: none;}
 .directory-main .list section {
