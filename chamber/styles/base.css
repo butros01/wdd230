@@ -460,6 +460,7 @@ footer p {
 	margin: 0 auto;
     padding: 2rem;
 	background-color: var(--accent2-color);
+    align-items: center;
 }
 .menu {
 	margin: 1rem auto;
@@ -471,16 +472,16 @@ footer p {
 .directory-main .grid {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 5px;  
+	grid-gap: 5px;
 }
 
-.grid  section {
+.grid section  {
     width: auto;
     height: auto;
     background-color: var(--accent1-color); 
     padding: 1rem;
     margin: 1.5em;
-    box-shadow: 1px 1px 5px 1px var(--primary-color)
+    box-shadow: 1px 1px 5px 1px var(--primary-color) 
 }
 .grid > section > div > h2 {
     margin-top: .2rem;
@@ -496,8 +497,12 @@ footer p {
 .directory-main .list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
+}
+
+.grid section > img{
+    width: 100%;
+    height: 180px auto ;  
 }
 .list img {display: none;}
 .directory-main .list section {
@@ -543,7 +548,7 @@ footer p {
     border-radius: 7px;
 }
 .home-spotlight section div img {
-    margin-top: 1rem;
+    margin: 1rem;
 }
 .home-spotlight .np, .directory-main .np, 
 .home-spotlight .gold, .directory-main .gold,
