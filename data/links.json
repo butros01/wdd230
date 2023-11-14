@@ -160,7 +160,17 @@
             {
                 "url": " ",
                 "title": "Collaboration Activity - JSON Menu"
+            },
+
+            {
+                "url": "./chamber/directory",
+                "title": "Chamber Directory Page"
             }
         ]
+    },
+
+    {
+        "lesson" : "10"
+       
     }
 ]}
