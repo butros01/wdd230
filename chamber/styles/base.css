@@ -497,21 +497,21 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    
 }
 .list img {display: none;}
 .directory-main .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
-    padding: 0.5rem;
+    padding: 2rem;
     border-radius: 3px;
 }
 .directory-main .list section:nth-child(odd) {
     background-color: var(--accent1-color);
 }
 .directory-main .list section:nth-child(even) {
-    background-color: var(--accent2-color);
+    background-color: var(--accent2-color); 
 }
 .directory-main .list section:last-child {
     margin-bottom: 3rem;
@@ -545,20 +545,11 @@ footer p {
 .home-spotlight section div img {
     margin-top: 1rem;
 }
-.home-spotlight .np, .directory-main .np {
-    color: var(--secondary-color);
-}
-.home-spotlight .bronze, .directory-main .bronze {
-    color: var(--accent2-color);
-    font-size: 25px;
-    
-}
-
-.home-spotlight .silver, .directory-main .silver {
-    color: var(--accent2-color);
-    font-size: 25px;
-}
-.home-spotlight .gold, .directory-main .gold {
+.home-spotlight .np, .directory-main .np, 
+.home-spotlight .gold, .directory-main .gold,
+.home-spotlight .silver, .directory-main .silver,
+.home-spotlight .bronze, .directory-main .bronze
+{
     color: var(--accent2-color);
     font-size: 25px;
 }
@@ -575,7 +566,6 @@ footer p {
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: right;
-    /* position: absolute; */
     width: 60px;
     height: 34px;
     top: 3px;
