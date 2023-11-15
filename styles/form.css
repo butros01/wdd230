@@ -28,8 +28,17 @@ input {
     margin: 2px;
 }
 
-
-
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+#formmessage {
+    grid-column: 1/2;
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
 #rating {
 	width: 180px;
 	margin-bottom: 0;

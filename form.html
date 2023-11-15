@@ -30,13 +30,16 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/60?lang=eng&id=p22#p22" target="_blank">Scripture</a></li>
         </ul>
     </nav>
+    <div id="formmessage"></div>
     <main>
+        
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label class="top">Usename*<input type="text" name="userName" id="userName"required></label>
+                
                 <label class="top">Password*<input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="8 or more characters (AlphaNumeric)" required></label>
-                <label class="top">Confirm Password*<input type="password" id="pwd2" name="pwd2" required></label>
+                <label class="top">Confirm Password*<input type="password" id="pwd2" name="pwd2" ></label>
                 <label class="top">Email*<input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[byui.\-]+\.[edu]{3}$" title="Please enter a valid email address with @byui.edu" required></label>
                 
             </fieldset>
