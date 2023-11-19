@@ -288,7 +288,15 @@ hr {
     margin: 10px 0;
     background: var(--accent1-color);
   }
-
+#home-meeting-banner {
+    text-shadow: 1px 1px 1px;
+    font-size: 25px;
+    width: 80%;
+    margin: 1rem auto;
+    grid-column: 1/-1;
+    align-items: center;
+    text-align: center;
+}
 
 /****************************************************************
 *

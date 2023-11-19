@@ -21,3 +21,12 @@ checkbox.addEventListener("click", () => {
 		main.style.backgroundColor = "#FFFFFF";
 	}
 });
+
+
+const meetingBanner = document.querySelector("#home-meeting-banner")
+if (date.getDay() === 3 || date.getDay() === 2) {
+	meetingBanner.style.display = "block";
+}
+else {
+	meetingBanner.style.display = "none";
+}
