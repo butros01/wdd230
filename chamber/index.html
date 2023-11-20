@@ -65,19 +65,27 @@
     </div>
     <main id="home">
         <div id="home-meeting-banner" data-closable="slide-out-right">
-            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
-            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-              <span aria-hidden="true">&times;</span>
+            <button class="close" aria-label="Dismiss alert" type="button" data-close onclick="document.getElementById('home-meeting-banner').style.display='none';">
+                <span aria-hidden="true"><i class="fa fa-window-close">❌</i></span>
             </button>
-          </div>
+            <div>
+                <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
+            </div>
+        </div>
+        
         <h2 class="dark">Check out our Upcoming Events</h2>
         <section class="card"> 
             <h3>Events</h3>
         </section>
         <section class="card">
             <h3>Weather</h3>
+            <section class="card" id="weather">
+                <figure>
+                    <img id="weather-icon" src="" alt="weather-icon">
+                    <span id="current-temp"></span>
+                </figure>
+            </section>
             <div id="weather">
-            <label for="temperature">Temperature:</label><input type="number" id="temperature" value="10">°C
             <label for="wind-speed"><br>Wind speed: </label><input type="number" id="wind-speed" value="12">Km/h
             <h4 id="wind-chill"><br>Wind Chill: <span></span></h4>
         </section>
@@ -115,5 +123,6 @@
     <script src="../chamber/scripts/getdates.js"></script>
     <script src="../chamber/scripts/base.js"></script>
     <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/weather.js"></script>
 </body>
 </html>

@@ -296,7 +296,21 @@ hr {
     grid-column: 1/-1;
     align-items: center;
     text-align: center;
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+  
 }
+
+
 
 /****************************************************************
 *
