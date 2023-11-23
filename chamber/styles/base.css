@@ -301,7 +301,7 @@ hr {
     justify-content: center;
     box-sizing: border-box;
     min-width: 400px;
-    padding: 5px 0 40px 0 5px;
+    padding: 5px 0 10px 5px;
     align-items: center;
     background-color: #eee;
     color: #000;
