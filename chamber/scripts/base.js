@@ -1,3 +1,4 @@
+/* HAMBURGER BUTTON */
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -22,11 +23,15 @@ checkbox.addEventListener("click", () => {
 	}
 });
 
+/* JOIN US BANNER */
+/* Display banner if day is Monday, Tuesday or Wednesday, it's forcing to hide it instead */
+const d = new Date();
+let day = d.getDay()
+const meetingBanner = document.getElementById("home-meeting-banner")
 
-const meetingBanner = document.querySelector("#home-meeting-banner")
-if (date.getDay() === 3 || date.getDay() === 2) {
-	meetingBanner.style.display = "block";
+if(day > 0 && day < 4) {
+	meetingBanner.style.display = `block`
 }
 else {
-	meetingBanner.style.display = "none";
+	meetingBanner.style.display = `none`
 }

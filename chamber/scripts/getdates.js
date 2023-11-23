@@ -37,6 +37,7 @@ else {
 if (numVisits == 0) {
 	lastVisitElement.innerText =  `Welcome! Let us know if you have any questions.`;
 } 
+
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 

@@ -250,7 +250,6 @@ main ul li {
     
 }
 .card {
-    min-height: 200px;
     border-radius: 10px;
     background-color: var(--accent2-color);
     text-decoration: none;
@@ -296,6 +295,19 @@ hr {
     grid-column: 1/-1;
     align-items: center;
     text-align: center;
+}
+.weather { 
+    margin: 1rem;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 400px;
+    padding: 5px 0 40px 0 5px;
+    align-items: center;
+    background-color: #eee;
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+}
 .close {
     color: white;
     float: right;
@@ -303,13 +315,6 @@ hr {
     font-weight: bold;
     position: relative;
   }
-  
-  .close:hover {
-    opacity: 1;
-  }
-  
-}
-
 
 
 /****************************************************************

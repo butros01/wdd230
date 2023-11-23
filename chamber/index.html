@@ -79,15 +79,46 @@
         </section>
         <section class="card">
             <h3>Weather</h3>
-            <section class="card" id="weather">
+            <section class="weather">
+                <p>Current Temperature</p>
                 <figure>
                     <img id="weather-icon" src="" alt="weather-icon">
                     <span id="current-temp"></span>
                 </figure>
             </section>
-            <div id="weather">
-            <label for="wind-speed"><br>Wind speed: </label><input type="number" id="wind-speed" value="12">Km/h
-            <h4 id="wind-chill"><br>Wind Chill: <span></span></h4>
+            <section class="weather">
+                <p>Temperature Forcast</p>
+                <ul>
+                    <li>
+                        <figure>
+                            <img id="weather-icon1" src="" alt="weather-icon1">
+                            <span id="current-temp1"></span>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img id="weather-icon" src="" alt="weather-icon">
+                            <span id="current-temp1"></span>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img id="weather-icon" src="" alt="weather-icon">
+                            <span id="current-temp3"></span>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="weather">
+                <div id="weather-data">
+                    <section id="wind-speed">
+                        <h4>Wind Speed: </h4><span></span>
+                    </section>
+                    <section id="wind-chill">
+                        <h4>Wind Chill: </h4><span></span>
+                    </section>
+                </div>
+            </section>
         </section>
         <hr>
         <h2 class="dark">Business Spotlights</h2>
