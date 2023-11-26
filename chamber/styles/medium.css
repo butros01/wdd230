@@ -37,6 +37,9 @@
     hr {
         display: none;
     }
+    div hr {
+        display: block;
+    }
     
     #home {
         grid-template-columns: 1fr 1fr;

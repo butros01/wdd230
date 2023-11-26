@@ -62,20 +62,28 @@ function displayForecast(data) {
     });
 
     days.forEach((item) => {
-        const iconsrc = `https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`;
+        const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
         const container = document.createElement("div");
-        const date2 = document.createElement("p");
-        const temp2 = document.createElement("p");
+        const date2 = document.createElement("span");
+        const temp2 = document.createElement("span");
         const iconWeather = document.createElement("img");
-        const weatherDesc = document.createElement("p");
-        const newDate = new Date(item.dt * 1000);
+        const hr = document.createElement("hr")
 
-        date2.textContent = newDate.toLocaleString('default', {month: "short", day: "numeric"});
-        temp2.innerHTML = `${item.main.temp.toFixed(1)}&deg;F`;
+        const newDate = new Date(item.dt * 1000);
+        let desc = item.weather[0].description;
+        let temp= `${item.main.temp.toFixed(1)}&deg;F`;
         iconWeather.setAttribute("src", iconsrc);
         iconWeather.setAttribute("alt", item.weather[0].main);
-        container.append(date2, temp2, iconWeather, weatherDesc);
+        date2.textContent = newDate.toLocaleString('default', {month: "short", day: "numeric"});
+        temp2.innerHTML = `${temp} - ${desc}`;
+        
+        // let tempDesc = `${temp} - ${desc}`
+        container.append(date2, iconWeather, temp2, hr);
         forecastCont.append(container);
+
+        
+        // forecastCont.innerHTML = `${temp} - ${desc}`;
+
     });
     
     function calculateWindchill(num1, num2) {
