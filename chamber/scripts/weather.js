@@ -2,7 +2,8 @@ const currentTemp = document.querySelector ('#current-temp');
 const weatherIcon = document.querySelector ('#weather-icon');
 const captionDesc= document.querySelector('figcaption');
 const forecastCont = document.querySelector(".forecast");
-
+const windSpeed = document.querySelector("#wind-speed");
+const windChill = document.querySelector("#windchill");
 const url1 = `https://api.openweathermap.org/data/2.5/weather?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
 const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
 
@@ -33,14 +34,26 @@ async function apiFetch(url) {
         console.log(error);   
     }  
 }
-
+function calculateWindchill(num1, num2) {
+    if (num1 <= 50 && num2 > 3.0) {
+        let windChillFactor = 35.74 + (0.6215 * num1) - (35.75 * (num2 ** 0.16)) + ((0.4275 * num1) * (num2 ** 0.16));
+        windChill.textContent = windChillFactor.toFixed(2);
+    } else {
+        windChill.textContent = "N/A";
+    }
+}
 
 function displayResults (data) {
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src',iconsrc);
     let desc = data.weather[0].description;
     let temp= `${data.main.temp.toFixed(0) } &deg; F`;
+    let wind = data.wind.speed;
+
     currentTemp.innerHTML = `${temp} - ${desc}`;   
+
+    windSpeed.textContent = wind;
+    calculateWindchill(temp, wind);
 }
 
 function displayForecast(data) {
@@ -76,8 +89,6 @@ function displayForecast(data) {
         iconWeather.setAttribute("alt", item.weather[0].main);
         date2.textContent = newDate.toLocaleString('default', {month: "short", day: "numeric"});
         temp2.innerHTML = `${temp} - ${desc}`;
-        
-        // let tempDesc = `${temp} - ${desc}`
         container.append(date2, iconWeather, temp2, hr);
         forecastCont.append(container);
 
@@ -86,14 +97,7 @@ function displayForecast(data) {
 
     });
     
-    function calculateWindchill(num1, num2) {
-        if (num1 <= 50 && num2 > 3.0) {
-            let windChillFactor = 35.74 + (0.6215 * num1) - (35.75 * (num2 ** 0.16)) + ((0.4275 * num1) * (num2 ** 0.16));
-            windChill.textContent = windChillFactor.toFixed(2);
-        } else {
-            windChill.textContent = "N/A";
-        }
-    }
+    
 }
 
 

@@ -31,9 +31,9 @@
         list-style: none;
         color: var(--primary-color)
     }
-    .active::before {
+    /* .active::before {
         display: none;
-    }
+    } */
     hr {
         display: none;
     }

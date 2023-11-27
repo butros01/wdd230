@@ -132,9 +132,8 @@ nav{
 	display: block;
     color: var(--accent2-color);
 }
-
-.active::before {
-	content: "⚡ ";
+.active {
+    background-color: #8DC133;
 }
 /****************************************************************
 *
@@ -300,7 +299,6 @@ hr {
     margin: 1rem;
     justify-content: center;
     box-sizing: border-box;
-    min-width: 450px;
     padding: 5px 0 10px 5px;
     align-items: center;
     background-color: #eee;
