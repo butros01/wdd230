@@ -1,5 +1,4 @@
 /* SHOW LIST OR GRID BUTTONS */
-
 const gridBtn = document.querySelector("#grid");
 const listBtn = document.querySelector("#list");
 const display = document.querySelector(".directory-main article");
@@ -11,7 +10,7 @@ gridBtn.addEventListener("click", () => {
 listBtn.addEventListener("click", () => {
     updateView("list")
     })
-} ;
+};
 function updateView(view) {
 display.classList.toggle("grid", view === "grid");
 display.classList.toggle("list", view === "list");
@@ -22,7 +21,7 @@ const checkDirectory = document.querySelector(".directory-main article");
 
 async function getBusinessData() {
     const checkIfDirectory = document.querySelector(".directory-main");
-    const checkIfMain = document.querySelector(".index-main");
+    const checkIfMain = document.querySelector("#home");
     const response = await fetch(urlBusiness);
     const data = await response.json();
     const sortedBusiness = sortBusinessByMembership(data.business);
@@ -96,14 +95,14 @@ function displayBusiness(webpage, business) {
 
         case "main":
             let spotlightNumber = 0;
-            const div = document.querySelector(".home-spotlight");
+            const section = document.querySelector(".smaller-card");
             const filteredBusinesses = business.filter(business => business.membership === "gold" || business.membership === "silver");
             const selectedBusinesses = getRandomBusinesses(filteredBusinesses, 3);
 
-            selectedBusinesses.forEach((business, index) => {
+            selectedBusinesses.forEach((business) => {
                 spotlightNumber ++;
 
-                const sectionMain = document.createElement("section");
+                const subSection = document.createElement("section");
                 const h2Main = document.createElement("h2");
                 const div1Main = document.createElement("div");
                 const imgMain = document.createElement("img");
@@ -119,26 +118,22 @@ function displayBusiness(webpage, business) {
                 p2Main.textContent = `${business.email}`;
                 p3Main.textContent = `${business.phone} | ${business.url}`;
     
-                sectionMain.setAttribute("id", `spotlight${spotlightNumber}`);
+                subSection.setAttribute("id", `spotlight${spotlightNumber}`);
                 div1Main.setAttribute("class", "home-spotlight-section1"); 
                 div2Main.setAttribute("class", "home-spotlight-section2"); 
                 h3main.setAttribute("class", setMembershipColor(business.membership));
                 imgMain.setAttribute("src", `images/${business.img}`);
                 imgMain.setAttribute("alt", `Logo of ${business.name}`);
 
-                div.append(sectionMain);
-                sectionMain.append(div1Main);
-                sectionMain.append(div2Main);
+                section.append(subSection);
+                subSection.append(div1Main);
+                subSection.append(div2Main);
                 div1Main.append(h2Main);
                 div1Main.append(h3main);
                 div1Main.append(imgMain);
                 div1Main.append(p1Main);
                 div2Main.append(p2Main);
                 div2Main.append(p3Main);
-
-                if (index === 2){
-                    sectionMain.classList.add("hide-spotlight");
-                }
             }
             )
             function getRandomBusinesses(array, count) {

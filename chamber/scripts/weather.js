@@ -38,7 +38,8 @@ function calculateWindchill(num1, num2) {
     if (num1 <= 50 && num2 > 3.0) {
         let windChillFactor = 35.74 + (0.6215 * num1) - (35.75 * (num2 ** 0.16)) + ((0.4275 * num1) * (num2 ** 0.16));
         windChill.textContent = windChillFactor.toFixed(2);
-    } else {
+    } 
+    else {
         windChill.textContent = "N/A";
     }
 }
@@ -91,13 +92,7 @@ function displayForecast(data) {
         temp2.innerHTML = `${temp} - ${desc}`;
         container.append(date2, iconWeather, temp2, hr);
         forecastCont.append(container);
-
-        
-        // forecastCont.innerHTML = `${temp} - ${desc}`;
-
-    });
-    
-    
+    });  
 }
 
 

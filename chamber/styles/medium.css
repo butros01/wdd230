@@ -31,9 +31,10 @@
         list-style: none;
         color: var(--primary-color)
     }
-    /* .active::before {
-        display: none;
-    } */
+    .smaller-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
     hr {
         display: none;
     }
@@ -60,4 +61,5 @@
     #joinUs {
         display: block;
     }
+    
 }
