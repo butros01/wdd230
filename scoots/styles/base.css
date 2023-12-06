@@ -1,0 +1,145 @@
+/* Add your styling here */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/****************************************************************
+* *
+* header area properties *
+* *
+*****************************************************************/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333;
+    color: #fff;
+    /* padding: 1rem; */
+}
+.topNav {
+    width: 100%;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #555;
+    align-items: center;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+}
+.siteIdentity{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: -100px;
+}
+
+nav {
+    grid-column: 1/-1;
+    width: 100%;
+    background-color: #555;
+    margin-top: 0.5rem;
+   
+}
+
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content:space-around
+}
+
+nav a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    padding: 1rem;
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+nav a:hover {
+    background-color: #000;
+}
+
+/****************************************************************
+* *
+* Home Page *
+* *
+*****************************************************************/
+
+section {
+    margin: 20px;
+}
+/****************************************************************
+* *
+* Rentals *
+* *
+*****************************************************************/
+
+
+/****************************************************************
+* *
+* Reservations *
+* *
+*****************************************************************/
+
+
+/****************************************************************
+* *
+* Contact *
+* *
+*****************************************************************/
+
+
+/****************************************************************
+* *
+* Attributions *
+* *
+*****************************************************************/
+
+
+/****************************************************************
+* *
+* Footer *
+* *
+*****************************************************************/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
