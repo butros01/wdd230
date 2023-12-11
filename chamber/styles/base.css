@@ -232,6 +232,7 @@ main h2 {
     margin: 1em ;
     font-family: philosopher, sans-serif;
     background-color: #8DC133;
+    width: fit-content;
     
 }
 
