@@ -240,6 +240,8 @@ section {
     border-radius: 10px;
     border: 1px solid var(--primary-color);
     margin: 1rem;
+    padding: 1rem;
+    
 }
 
 main ul li {
@@ -290,6 +292,7 @@ main p {
     margin: 1rem;
     height: max-content;
     box-sizing: border-box;
+    text-align: center;
 }
 hr {
     height: 3px;
