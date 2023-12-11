@@ -48,6 +48,10 @@
     #content img:hover {
         box-shadow: 0 0 50px #333;
     }
+    /* directory */
+    .grid section  {
+        width: 320px;
+    }
     #discover-page {
         grid-template-columns: 350px auto;
     }

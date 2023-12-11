@@ -512,7 +512,9 @@ footer p {
 .directory-main .grid {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 15px;
+    text-align: center;
+    padding: 1rem;
 }
 
 .grid section  {
