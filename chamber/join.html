@@ -74,7 +74,7 @@
             <fieldset>
                 <legend>Business Information</legend>
                 <label class="top">Business Name*<input type="text" name="bussname" id="businessName" required></label>
-                <label class="top">Business Position<input type="text" name="position" id="businessPosition" pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="top">Business Title/Position<input type="text" name="position" id="businessPosition" pattern="^[a-zA-Z\s\-]{7,}" required></label>
                 <label class="top">Briefly describe your business<textarea name="description" id="bussinessDesc" cols="30" rows="7"></textarea></label>
                 <input type="hidden" id="hiddenDate" name="hiddenDate">
             </fieldset>
