@@ -1,4 +1,4 @@
-const infoURL = "https://davm07.github.io/wdd230/scoots/data/prices.json";
+const infoURL = "https://butros01.github.io/wdd230/scoots/data/prices.json";
 const table = document.querySelector("#table");
 const names = document.querySelectorAll(".names");
 
@@ -16,8 +16,8 @@ async function fecthDocument(url) {
     }   
 }
 
-function displayInfo(list) {
-    list.vehicles.forEach((vehicle, index) => {
+function displayInfo(data) {
+    data.vehicles.forEach((vehicle) => {
         const row = document.createElement("tr");
         const vehType = document.createElement("td");
         const maxCapa = document.createElement("td");
@@ -27,7 +27,6 @@ function displayInfo(list) {
         const fullPrice = document.createElement("td");
 
         vehType.innerHTML = vehicle.type;
-        names.item(index).innerHTML = vehicle.type;
         maxCapa.innerHTML = vehicle.capacity;
         vehicle.prices.forEach((price) =>{
                 if(price.reservation) {
@@ -43,6 +42,8 @@ function displayInfo(list) {
         row.append(vehType, maxCapa, priceHalf, priceFull, halfPrice, fullPrice);
         table.append(row);
     });
+    
+    
 }
 
 fecthDocument(infoURL);
