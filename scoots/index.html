@@ -23,15 +23,21 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="icon" href="favicon.ico">
 </head>
-</head>
+
 <body>
+    <div id="temp-alert">
+        <p>Today's highest temperature <span id="temp-msg"></span></p>
+        <button name="close-alert" class="close-alert" aria-label="Close temperature alert">
+            <object data="images/arrowup.svg" aria-label="close-alert"></object>
+        </button>
+    </div>
     <header>
         <div class="topNav">
             <p><span id="todays-date">Date</span></p>
             <ul class =topNavUl>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
             </ul>
         </div>
         <div class="logo">
@@ -52,37 +58,73 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <section id="hero">
-            <!-- Images and Call to Action -->
-            <h2>Rent Your Adventure Today!</h2>
-            <button>Make a Reservation</button>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 640px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 900px)">
+            <img src="images/hero-large.jpg" alt="Cozumel" width="1280" height="883">
+        </picture>
+        <div class="herolabel">
+            <h1 class="home-title">Rent Your Adventure Today!</h1>
+            <div class="button-box">
+                <a class="join" href="../scoots/reservations.html">Make a Reservation</a>
+            </div>
+        </div>
+    </div>
+    <main class="home">
+        
+       
+        <section id="rentals">
+            <h2>Rentals Overview</h2>
+            <div class="vehicles">
+                <img src="images/scooter.svg" alt="Scooter" width="80" height="80"></img>
+                <div class="vehicle-info">
+                    <h3>Scooters</h3>
+                    <p>Honda Metropolitan (49cc) - Zip through Cozumel's streets with our lightweight and fuel-efficient scooters. (Ideally for <b>1</b> person)</p>
+                    <p>Honda Dio (110cc) -  Explore Cozumel's urban and coastal areas in comfort with our mid-sized scooters. (Ideally for <b>2</b> people)</p>
+                    <p>Honda PCX150 (149cc) - Experience the thrill of a powerful scooter that handles both city and off-road terrains. (Ideally for <b>2</b> people)</p>
+                </div>
+            </div>
+            <div class="vehicles">
+                <img src="images/atv.svg" alt="Atvs" width="80" height="80"></img>
+                <div class="vehicle-info">
+                    <h3>ATVs</h3>
+                    <p>Honda Pioneer 1000 - Conquer Cozumel's rugged terrains and hidden gems with our versatile ATVs. (Ideally for <b>4</b> people)</p>
+                </div>
+            </div>
+            <div class="vehicles">
+                <img src="images/jeep.svg" aria-label="Jeep" width="80" height="80"></img>
+                <div class="vehicle-info">
+                    <h3>Jeeps</h3>
+                    <p>Jeep Wrangler - 4 door manual with A/C - Cruise Cozumel's winding roads and scenic coastlines with our spacious and comfortable Jeeps. (Ideally for <b>5</b> people)</p>
+                    <p>Jeep Wrangler - 2 door - open air - manual - Embark on an open-air adventure with our iconic Jeeps, perfect for couples and smaller groups. (Ideally for <b>4</b> people)</p>
+                </div>
+            </div>
         </section>
-    
-        <section id="summary">
-            <!-- Summary information about rental types -->
+        <section id="social">
+            <h2>Our Socials</h2>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
         </section>
-    
         <section id="weather">
-            <!-- Weather Information -->
-            <div id="current-weather">
-                <!-- Current Temperature, Condition, Humidity -->
+            <div id="today-weather">
+                <p>Today</p>
+                <div id="weather-events"></div>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
             </div>
-            <div id="weather-alert">
-                <!-- Display Weather Alerts -->
+            <div id="forecast">
+                <p>Tomorrow</p>
+                <div id="weather-forecast"></div>
+                <p>Temperature: <span id="temp-forecast"></span></p>
+                <p>Humidity: <span id="humidity-forecast"></span></p>
             </div>
-            <div id="one-day-forecast">
-                <!-- One Day Forecast -->
-            </div>
-        </section>
-    
-        <section id="social-media">
-            <!-- Social Media Links -->
         </section>
     </main>
     <footer>
         <p> &copy; <span id="year">2023</span> | Scoots | Your Cozumel Escape</p>
         <a href="attributions.html">Attributions</a>
+        <script src="../scoots/scripts/weather.js"></script>
     </footer>
 </body>

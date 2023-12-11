@@ -31,7 +31,7 @@ async function apiFetch(url) {
         }
     } 
     catch (error) {
-        console.log(error);   
+        alert(error);  
     }  
 }
 function calculateWindchill(num1, num2) {
