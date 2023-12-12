@@ -1,12 +1,34 @@
-/* Add your styling here */
+/* Root */
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #555555;
+    --secondary-color: #FFFFFF;
+    --accent1-color: #41337A;
+    --accent2-color: #04AA6D;
+    --accent3-color: #A31621;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: Philosopher;
+    --paragraph-font: Heebo, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #0A050F;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #0A050F; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #0A050F;
+    --nav-link-color: #0A050F;
+    --nav-background-color: #f8b807;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #0A050F;
+  }
+
 *{
     max-width: 1280px;
+    margin: 0 auto;
 }
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    
 }
 
 /****************************************************************
@@ -14,11 +36,19 @@ body {
 * header area properties *
 * *
 *****************************************************************/
+#tempInfo {
+    background-color: #002A22;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* background-color: #333; */
-    color: black;
+    color: var(--primary-color);
     padding: 1rem;
 }
 .topNav {
@@ -26,9 +56,13 @@ header {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #555;
+    background-color: var(--primary-color);
     align-items: center;
     color: white;
+}
+.topNavUl li {
+    list-style-type: none;
+    display: inline;
 }
 
 .fa-facebook, .fa-twitter, .fa-linkedin {
@@ -68,14 +102,17 @@ header {
 .siteIdentity{
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-left: -100px;
+    text-align: left;
 }
 
 nav {
     grid-column: 1/-1;
     width: 100%;
-    background-color: #555;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin-top: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
    
 }
 
@@ -83,7 +120,7 @@ nav {
 nav ul {
     display: inline-flex;
     list-style-type: none;
-    justify-content:space-around
+    justify-content:space-around;
 }
 
 nav a{
@@ -109,21 +146,22 @@ nav a:hover {
 .hero{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; 
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .herolabel {
-	grid-column: 1/2 ;
+	grid-column: 2/3 ;
     grid-row: 1/2;
     z-index: 1;
 	align-self: center;
-    
-	padding: 0.5rem;
-    text-align: center;
+	padding: .5rem;
     color: #ffffff
 }
 
 .hero picture {
-    grid-column: 1/2;
+    width: 100%;
+    grid-column: 1/4;
     grid-row: 1/2
 }
 
@@ -133,19 +171,76 @@ nav a:hover {
 }
 
 .join{
-    background-color: purple;
-    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
-    padding: 15px 30px;
-    margin-top: 50px;
+    padding: .5rem;
+    margin: 2rem;
     border-radius: 5px;
     border: 1px solid #ffffff;
 }
 .join:hover {
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+#home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#rentalsInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+h2 {
+    grid-column: 1/-1;
+    
+}
+.vehicles {
+    box-shadow: 0 0 10px var(--primary-color);
+    background-color: 1px solid var(--accent3-color) ;
+    border: 1px solid var(--accent3-color);
+    margin: 1rem;
+    /* padding: 1rem */
+    font-size: 25px;
+    
+}
+
+.vehicles li {
+    text-indent: -10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.vehicles h3 {
+    background-color: var(--accent1-color);
+    padding: 1em;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.sidebar {
+    border: 10px solid var(--accent3-color);
+    width: fit-content;
+    padding: 1rem;
+    width: 80%;
+    height: 20px;
+    min-height: 100px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+    margin-top: 50px;
+}
+
+.weather {
+    border: 1px solid var(--accent3-color);
+    display: flex;
+    flex-direction: row;
+    padding: 10rem;
+    font-size: 20px;
+    width: 100%;
 }
 
 /****************************************************************
@@ -153,21 +248,6 @@ nav a:hover {
 * Rentals *
 * *
 *****************************************************************/
-:root {
-	--back: rgb(1, 14, 7);
-  --back2: hsla(150, 100%, 2%, 0.5);
-  --foredark: hsla(0,0%,10%,1);
-	--forelight: hsla(0,0%,100%,1);
-	--border: hsla(0,0%,20%,.8);
-	--borderlight: hsla(0,0%,33%,.3);
-	--shadow: hsl(0,0%,50%);
-	--zebra: hsl(0, 0%, 93%, 1);
-}
-
-body {
-	font-family: "EB Garamond", Arial, serif;
-}
-
 table {
 	margin: 10px auto;
 	border: thin solid var(--border);

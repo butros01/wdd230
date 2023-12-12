@@ -113,7 +113,6 @@ function createElements(list, container) {
 }
 
 apiFetch(url1);
-apiFetch(url2);
 
 
 
