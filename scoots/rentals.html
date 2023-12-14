@@ -29,14 +29,14 @@
         <div class="topNav">
             <p><span id="todays-date">Date</span></p>
             <ul class =topNavUl>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
             </ul>
         </div>
         <div class="logo">
             <a href="index.html">
-                <img src="../scoots/images/site-logo.png" alt="Scoots Logo" width="60" height="60">
+                <img src="../scoots/images/logo.jpg" alt="Scoots Logo" width="60" height="60">
             </a>
         </div>
         <div class="siteIdentity">
@@ -44,11 +44,12 @@
             <span>Your Cozumel Escape</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
-                <li><a class="active" href="rentals.html">Rentals</a>|</li>
-                <li><a href="reservations.html">Reservation</a>|</li>
-                <li><a href="contact.html">Contact Us</a>|</li>
+            <button id="menu" aria-label="menu"></button>
+            <ul class="navigation">
+                <li>|<a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
+                <li>|<a class="active" href="rentals.html">Rentals</a>|</li>
+                <li>|<a href="reservations.html">Reservation</a>|</li>
+                <li>|<a href="contact.html">Contact Us</a>|</li>
             </ul>
         </nav>
     </header>
@@ -77,32 +78,6 @@
                     
                 </tbody>
             </table>
-            <!-- <section id="rental-vehicles">
-                <div class="rental-type">
-                    <img src="images/metropolitan.webp" alt="Honda Metropolitan" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-                <div class="rental-type">
-                    <img src="images/dio.webp" alt="Honda Dio" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-                <div class="rental-type">
-                    <img src="images/pcx150.webp" alt="Honda PCX150" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-                <div class="rental-type">
-                    <img src="images/hondaatv.webp" alt="Honda Pioneer ATV" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-                <div class="rental-type">
-                    <img src="images/jeepfour.webp" alt="Jeep 4 doors" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-                <div class="rental-type">
-                    <img src="images/jeeptwo.webp" alt="Jepp 2 doors" width="210" height="140">
-                    <p class="names"></p>
-                </div>
-            </section> -->
         </section>
     </main>
     <footer>
@@ -110,5 +85,6 @@
         <a href="attributions.html">Attributions</a>
     </footer>
     <script src="../scoots/scripts/rentals.js"></script>
+    <script src="../scoots/scripts/base.js"></script>
 </body>
 </html>

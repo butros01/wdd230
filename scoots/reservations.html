@@ -29,14 +29,14 @@
         <div class="topNav">
             <p><span id="todays-date">Date</span></p>
             <ul class =topNavUl>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
             </ul>
         </div>
         <div class="logo">
             <a href="index.html">
-                <img src="../scoots/images/site-logo.png" alt="Scoots Logo" width="60" height="60">
+                <img src="../scoots/images/logo.jpg" alt="Scoots Logo" width="60" height="60">
             </a>
         </div>
         <div class="siteIdentity">
@@ -44,11 +44,12 @@
             <span>Your Cozumel Escape</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
-                <li><a href="rentals.html">Rentals</a>|</li>
-                <li><a class="active" href="reservations.html">Reservation</a>|</li>
-                <li><a href="contact.html">Contact Us</a>|</li>
+            <button id="menu" aria-label="menu"></button>
+            <ul class="navigation">
+                <li>|<a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
+                <li>|<a href="rentals.html">Rentals</a>|</li>
+                <li>|<a class="active" href="reservations.html">Reservation</a>|</li>
+                <li>|<a href="contact.html">Contact Us</a>|</li>
             </ul>
         </nav>
     </header>
@@ -107,6 +108,7 @@
     <footer>
         <p> &copy; <span id="year">2023</span> | Scoots | Your Cozumel Escape</p>
         <a href="attributions.html">Attributions</a>
+        <script src="../scoots/scripts/base.js"></script>
     </footer>
 </body>
 </html>
