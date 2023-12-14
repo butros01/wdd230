@@ -70,51 +70,37 @@
             </ul>
         </section>
         <section>
-            <form action="thankyou.html" method="get">
+            <form method="get" action="thanks.html" >
                 <fieldset>
-                    <p>*️ indicates a required field</p>
-                    <legend>Personal Info</legend>
-                    <label for="rental-name">Full Name:*</label>
-                    <input type="text" id="rental-name" name="name" required>
-            
-                    <label for="rental-phone">Phone Number:*</label>
-                    <input type="tel" id="rental-phone" name="phone" required>
-            
-                    <label for="rental-email">Email Address:*</label>
-                    <input type="email" id="rental-email" name="email" required>
-            
-                    <label for="rental-state">Home State or Country:*</label>
-                    <input type="text" id="rental-state" name="rental-state" required>
-            
-                    <label for="rental-cruise">Cruise Line (if applicable):</label>
-                    <input type="text" id="rental-cruise" name="rental-cruise" placeholder="Enter Cruise Line">
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Home State or Country* <input type="state" name="state" placeholder="State/Country"></label>
+                    <label class="top">Cruise Line (if applicable) <input type="cruise" name="cruise" placeholder="Cruise Line"></label>
+                    <label class="top">Website* <input type="url" name="url" placeholder="https://"></label>
                 </fieldset>
-                <fieldset>
-                    <legend>Rental Info</legend>
-                    <label for="rental-date">Pickup Date:*</label>
-                    <input type="date" id="rental-date" name="date" required>
-            
-                    <label for="rental-period">Rental Period (days):*</label>
-                    <input type="number" id="rental-period" name="rental-period" min="1" max="30" required>
-            
-                    <label for="rental-type">Rental Type:*</label>
-                    <select id="rental-type" name="rental-type" required>
-                        <option value="scooter">Honda Dio (Scooter)</option>
-                        <option value="scooter">Honda Metropolitan (Scooter)</option>
-                        <option value="scooter">Honda PCX150 (Scooter)</option>
-                        <option value="atv">Honda Pioneer 1000 (ATV)</option>
-                        <option value="jeep">Jeep Wrangler (4 Door)</option>
-                        <option value="jeep">Jeep Wrangler (2 Door)</option>
-                    </select>
-            
-                    <label for="rental-number">Number of Rental Units:*</label>
-                    <input type="number" id="rental-number" name="rental-number" min="1" required>
-        
-                    <label for="rental-dropoff">Special Accommodation/Comments</label>
-                    <textarea id="rental-dropoff" name="rental-dropoff" rows="5" placeholder="Specify drop-off location (if applicable)"></textarea>
-                </fieldset>
-        
-                <button type="submit">Make My Reservation</button>
+                <Fieldset>
+                    <legend >Rental Information</legend>
+                    <label class="top">Check-In Date <input type="date" name="completeDate"></label>
+                    <label class="top">Rental Period in Days*<input type="number" name="authors" required></label>
+                    <label class="top">Rental Type*
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="scooter">Honda Dio (Scooter)</option>
+                            <option value="scooter">Honda Metropolitan (Scooter)</option>
+                            <option value="scooter">Honda PCX150 (Scooter)</option>
+                            <option value="atv">Honda Pioneer 1000 (ATV)</option>
+                            <option value="jeep">Jeep Wrangler (4 Door)</option>
+                            <option value="jeep">Jeep Wrangler (2 Door)</option>
+                       
+                        </select>
+                    </label>
+                    <label class="top">Rental Units Number*<input type="number" name="authors" required></label>
+                    <label class="top">Special Accommodation/Comments<textarea name="description" id="bussinessDesc" cols="30" rows="7" placeholder="Information on the need and location of a drop-off request (if applicable)"></textarea></label>
+                </Fieldset>
+                <input type="submit" value="Make My Reservation" class="submitBtn">
             </form>
         </section>
     </main>

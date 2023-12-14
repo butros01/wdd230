@@ -1,3 +1,71 @@
 @media only screen and (min-width: 640px) {
-    
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  #menu {
+  display: none; 
+  } 
+
+  .navigation li {
+    display: inline-flex;
+    align-items: center;
+  }
+  .navigation {
+    flex-direction: row;
+    background-color: var(--primary-color);
+  }
+  .navigation {
+      list-style: none;
+      color: var(--secondary-color)
+  }
+
+  .topNav {
+    width: 100%;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+    align-items: center;
+    color: white;
+  }
+  .topNavUl li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  .social {
+    border: 10px solid var(--accent3-color);
+    width: fit-content;
+    padding: 1rem;
+    width: 250px;
+    min-height: 100px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+    /* margin-top: 50px; */
+  }
+
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+/****************************************************************
+* *
+* Home Page *
+* *
+*****************************************************************/
+  #home {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .rentalsInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }

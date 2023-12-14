@@ -6,29 +6,19 @@
     --accent1-color: #41337A;
     --accent2-color: #04AA6D;
     --accent3-color: #A31621;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: Philosopher;
-    --paragraph-font: Heebo, Helvetica, sans-serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #0A050F;  /* headlines on a white background */ 
-    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #0A050F; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #0A050F;
-    --nav-link-color: #0A050F;
-    --nav-background-color: #f8b807;
-    --nav-hover-link-color: #FFFFFF;
-    --nav-hover-background-color: #0A050F;
-  }
+}
 
 *{
-    max-width: 1280px;
+    font-family: Heebo, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
     margin: 0 auto;
+    
 }
 body {
-    font-family: 'Arial', sans-serif;
+    max-width: 1280px;
+    width: 100%;
+    
+    
 }
 
 /****************************************************************
@@ -37,9 +27,10 @@ body {
 * *
 *****************************************************************/
 #tempInfo {
-    background-color: #002A22;
+    background-color: var(--accent1-color);
     box-sizing: border-box;
     color: var(--secondary-color);
+    margin: 1rem;
     padding: 1em;
     text-align: center;
     width: 100%;
@@ -52,23 +43,12 @@ header {
     padding: 1rem;
 }
 .topNav {
-    width: 100%;
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--primary-color);
-    align-items: center;
-    color: white;
-}
-.topNavUl li {
-    list-style-type: none;
-    display: inline;
+    display: none;
 }
 
 .fa-facebook, .fa-twitter, .fa-linkedin {
     padding: 20px;
     font-size: 30px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -107,45 +87,83 @@ header {
 
 nav {
     grid-column: 1/-1;
-    width: 100%;
-    background-color: var(--primary-color);
+    width: 100%;     
+}
+
+.switch {
+    display: flex;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid var(--primary-color);
+	padding: 3px 7px 6px;
+	background-color: var(--accent2-color);
+	color: var(--secondary-color);
+ 	position: absolute;
+	top: 70px;
+	right: 1rem;
+}
+#menu::before {
+    content: "☰"
+}
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+    font-family: philosopher;
+    font-weight: 700;
+}
+.navigation li a:hover {
+	background-color: var(--accent2-color);
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+    
+	display: block;
     color: var(--secondary-color);
-    margin-top: 0.5rem;
-    padding: 1rem;
-    box-sizing: border-box;
-   
 }
-
-
-nav ul {
-    display: inline-flex;
-    list-style-type: none;
-    justify-content:space-around;
-}
-
-nav a{
-    text-decoration: none;
-    margin: 20px;
-    color: white;
-    padding: 1rem;
-}
-
 .active {
-    background-color: #04AA6D;
-  }
-nav a:hover {
-    background-color: #000;
+    background-color: var(--accent2-color);
 }
-
 /****************************************************************
-* *
-* Home Page *
-* *
+*
+*Hero area properties *
+*
 *****************************************************************/
+
+.hero img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
 
 .hero{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-columns: 1fr 3fr 1fr;
     box-sizing: border-box;
     width: 100%;
 }
@@ -181,28 +199,37 @@ nav a:hover {
     border-radius: 5px;
     border: 1px solid #ffffff;
 }
+
 .join:hover {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
+/****************************************************************
+* *
+* Home Page *
+* *
+*****************************************************************/
 #home {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
 }
-#rentalsInfo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} 
+
+ 
 h2 {
     grid-column: 1/-1;
+    text-align: center;
     
 }
+.rentalsInfo, .social {
+    border: 4px solid var(--accent1-color);
+    margin: 1rem;
+}
+
 .vehicles {
     box-shadow: 0 0 10px var(--primary-color);
     background-color: 1px solid var(--accent3-color) ;
     border: 1px solid var(--accent3-color);
     margin: 1rem;
-    /* padding: 1rem */
     font-size: 25px;
     
 }
@@ -211,38 +238,40 @@ h2 {
     text-indent: -10px;
     font-size: 20px;
     padding: 10px;
+    margin: 1rem;
 }
 
-.vehicles h3 {
+.vehicles h3, .social h2 {
     background-color: var(--accent1-color);
     padding: 1em;
     color: var(--secondary-color);
     text-align: center;
 }
 
-.sidebar {
-    border: 10px solid var(--accent3-color);
-    width: fit-content;
+.social {
+    text-align: center;
     padding: 1rem;
-    width: 80%;
-    height: 20px;
-    min-height: 100px;
-    overflow: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5%;
-    margin-top: 50px;
+ 
+
 }
 
 .weather {
-    border: 1px solid var(--accent3-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid var(--accent3-color);
+    margin: 1rem;
     flex-direction: row;
-    padding: 10rem;
     font-size: 20px;
     width: 100%;
+    text-align: center;
 }
 
+.weather h3 {
+    grid-column: 1/-1;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    
+}
 /****************************************************************
 * *
 * Rentals *
@@ -291,6 +320,63 @@ tbody tr:nth-child(even) {
 * *
 *****************************************************************/
 
+/* -------FORM----------------- */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 220rem;
+    background-color: rgb(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left:red solid 6px ;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
 
 /****************************************************************
 * *
@@ -316,4 +402,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    /* width: 100%; */
+    margin: 1rem;
 }

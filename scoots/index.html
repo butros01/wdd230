@@ -47,11 +47,12 @@
             <span>Your Cozumel Escape</span>
         </div>
         <nav>
-            <ul>
-                <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
-                <li><a href="rentals.html">Rentals</a>|</li>
-                <li><a href="reservations.html">Reservation</a>|</li>
-                <li><a href="contact.html">Contact Us</a>|</li>
+            <button id="menu" aria-label="menu"></button>
+            <ul class="navigation">
+                <li>|<a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>|</li>
+                <li>|<a href="rentals.html">Rentals</a>|</li>
+                <li>|<a href="reservations.html">Reservation</a>|</li>
+                <li>|<a href="contact.html">Contact Us</a>|</li>
             </ul>
         </nav>
     </header>
@@ -70,48 +71,48 @@
         </div>
     </div>
     <main id="home">
-        <section id="rentalsInfo">
+        <h2>We are Happy to have YOU 😊</h2>
+        <section class="rentalsInfo">
             <h2>Rentals Overview</h2>
             <section class="vehicles">
                 <h3>Scooters</h3>
                 <ul class="vehicle-info">
-                    <li>Honda Metropolitan (49cc) - Zip through Cozumel's streets with our lightweight and fuel-efficient scooters. (Ideally for <b>1</b> person)</li>
-                    <li>Honda Dio (110cc) -  Explore Cozumel's urban and coastal areas in comfort with our mid-sized scooters. (Ideally for <b>2</b> people)</li>
-                    <li>Honda PCX150 (149cc) - Experience the thrill of a powerful scooter that handles both city and off-road terrains. (Ideally for <b>2</b> people)</li>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PCX150 (149cc) - 2 person</li>
                 </ul>
             </section>
             <section class="vehicles">
                 <h3>ATVs</h3>
                 <ul class="vehicle-info">
-                    <li>Honda Pioneer 1000 - Conquer Cozumel's rugged terrains and hidden gems with our versatile ATVs. (Ideally for <b>4</b> people)</li>
+                    <li>Honda Pioneer 1000 - 4 person</li>
                 </ul>
             </section>
             <section class="vehicles">
                 <h3>Jeeps</h3>
                 <ul class="vehicle-info">
                     
-                    <li>Jeep Wrangler - 4 door manual with A/C - Cruise Cozumel's winding roads and scenic coastlines with our spacious and comfortable Jeeps. (Ideally for <b>5</b> people)</li>
-                    <li>Jeep Wrangler - 2 door - open air - manual - Embark on an open-air adventure with our iconic Jeeps, perfect for couples and smaller groups. (Ideally for <b>4</b> people)</li>
+                    <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                    <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
                 </ul>
             </section>
         </section>
-        <section class="sidebar">
+        <section class="social">
             <h2>Our Socials</h2>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-linkedin"></a>
-            
         </section>
-        
         <section class="weather">
+            <h2>Weather Information</h2>
             <div id="today-weather">
-                <p>Today</p>
+                <h3>Today</h3>
                 <div id="weather-events"></div>
                 <p>Temperature: <span id="temperature"></span></p>
                 <p>Humidity: <span id="humidity"></span></p>
             </div>
             <div id="forecast">
-                <p>Tomorrow</p>
+                <h3>Tomorrow</h3>
                 <div id="weather-forecast"></div>
                 <p>Temperature: <span id="temp-forecast"></span></p>
                 <p>Humidity: <span id="humidity-forecast"></span></p>
@@ -122,5 +123,6 @@
         <p> &copy; <span id="year">2023</span> | Scoots | Your Cozumel Escape</p>
         <a href="attributions.html">Attributions</a>
         <script src="../scoots/scripts/weather.js"></script>
+        <script src="../scoots/scripts/base.js"></script>
     </footer>
 </body>
