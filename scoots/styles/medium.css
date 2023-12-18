@@ -54,6 +54,14 @@
     padding: .4rem 0;
   }
 
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+}
 /****************************************************************
 * *
 * Home Page *
