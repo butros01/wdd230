@@ -31,12 +31,12 @@
 *****************************************************************/
 * {
     font-family: Heebo, Arial, Helvetica, sans-serif;
-    
+    margin: 0 auto;
 }
 body {
     max-width: 1200px;
-    min-width: 350px;
-    margin: 0 auto;
+    min-width: 400PX;
+    
 }
 
 /****************************************************************
@@ -217,7 +217,7 @@ main {
     border: 5px solid var(--accent3-color);
     padding: 1rem;
     background-color: var(--accent2-color);
-    grid-gap: 1rem;
+    grid-gap: 5px;
     
 }
 p {
