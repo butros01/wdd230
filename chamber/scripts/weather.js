@@ -4,8 +4,8 @@ const captionDesc= document.querySelector('figcaption');
 const forecastCont = document.querySelector(".forecast");
 const windSpeed = document.querySelector("#wind-speed");
 const windChill = document.querySelector("#windchill");
-const url1 = `https://api.openweathermap.org/data/2.5/weather?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
+const url1 = `https://api.openweathermap.org/data/2.5/weather?lat=-1.29&lon=36.82&units=metric&appid=2aed5d5a23adccd7c990dad86aeec570`
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=-1.29&lon=36.82&units=metric&appid=2aed5d5a23adccd7c990dad86aeec570`
 
 
 async function apiFetch(url) {
@@ -48,7 +48,7 @@ function displayResults (data) {
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src',iconsrc);
     let desc = data.weather[0].description;
-    let temp= `${data.main.temp.toFixed(0) } &deg; F`;
+    let temp= `${data.main.temp.toFixed(0) } &deg; C`;
     let wind = data.wind.speed;
 
     currentTemp.innerHTML = `${temp} - ${desc}`;   
@@ -64,7 +64,6 @@ function displayForecast(data) {
     let dayRange = 0;
     let counter = 0;
 
-    //Source (Shecodes.com)
     data.list.forEach((forecast) => {
         const futureDate = new Date(forecast.dt * 1000);
         const nextDay = futureDate.getDate();
@@ -85,7 +84,7 @@ function displayForecast(data) {
 
         const newDate = new Date(item.dt * 1000);
         let desc = item.weather[0].description;
-        let temp= `${item.main.temp.toFixed(1)}&deg;F`;
+        let temp= `${item.main.temp.toFixed(1)}&deg;C`;
         iconWeather.setAttribute("src", iconsrc);
         iconWeather.setAttribute("alt", item.weather[0].main);
         date2.textContent = newDate.toLocaleString('default', {month: "short", day: "numeric"});
