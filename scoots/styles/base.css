@@ -9,7 +9,7 @@
 }
 
 *{
-    font-family: Heebo, Arial, Helvetica, sans-serif;
+    font-family: Philosopher, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0 auto;
     
@@ -17,6 +17,7 @@
 body {
     max-width: 1200px;
     width: 100%;
+    min-width: 400PX;
     
     
 }
@@ -30,9 +31,9 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--accent3-color);
     font-size: 25px;
+    
 }
 .topNav {
     display: none;
@@ -192,6 +193,10 @@ nav {
 	padding: .5rem;
 }
 
+.herolabel h1 {
+    display: none;
+}
+
 .hero picture {
     grid-column: 1/4;
     grid-row: 1/2
@@ -239,6 +244,7 @@ h2 {
 }
 .rentalsInfo {
     border: 1px solid var(--accent1-color);
+    margin: 1rem 0 1rem 0;
     width: 100%
     
 }
@@ -269,7 +275,7 @@ h2 {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    border: 2px solid var(--accent3-color);
+    border: 1px solid var(--accent3-color);
     margin: .5rem 0 .5rem 0;
 }
 
@@ -294,11 +300,15 @@ h2 {
 * Rentals *
 * *
 *****************************************************************/
+#rentals-page{
+    width: 100%;
+}
 table {
-	margin: 10px auto;
+	/* margin: 10px auto; */
 	border: 1px solid var(--accent1-color);
 	box-shadow: 0 0 10px var(--accent2-color);
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
+    width: 100%;
 }
 
 caption {
@@ -341,6 +351,10 @@ tbody tr:nth-child(even) {
 *****************************************************************/
 
 /* -------FORM----------------- */
+#reservations hr {
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+}
 form fieldset {
     margin: 2rem 0;
     border: 1px solid var(--accent1-color);
@@ -405,7 +419,20 @@ form label.top input:required:valid {
 * Contact *
 * *
 *****************************************************************/
+.locations {
+    margin: 1em;
+    padding: 1em;
+}
+#contact h3 {
+    margin: 1rem;
+    text-align: center;
+}
 
+#contact hr {
+    margin: 1rem;
+    color: var(--accent3-color);
+    border: 2px solid var(--accent3-color);
+}
 .container {
     position: relative;
     width: 100%;
@@ -442,4 +469,5 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: .5rem;
+    width: 100%;
 }
