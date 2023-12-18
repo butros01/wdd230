@@ -58,7 +58,7 @@
     grid-template-columns: 1fr;
   }
 
-  .logo {
+  .logo img {
     display: flex;
     align-items: center;
 }
