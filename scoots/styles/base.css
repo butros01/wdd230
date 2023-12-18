@@ -316,7 +316,7 @@ table {
 caption {
     padding: 10px;
     caption-side: bottom;
-    /* color: var(--primary-color); */
+    color: var(--primary-color);
 	font-size: .85rem;
 }
 
