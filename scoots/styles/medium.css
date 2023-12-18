@@ -1,4 +1,4 @@
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 550px) {
   header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
