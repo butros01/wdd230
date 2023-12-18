@@ -1,10 +1,5 @@
-//Weather info homepage
-// const url1 =
-//   "https://api.openweathermap.org/data/2.5/weather?lat=20.438&lon=-86.927&units=imperial&appid=eaa7d958886dda1b5fd5aa3be2aa0756";
-// const url2 =
-//   "https://api.openweathermap.org/data/2.5/forecast?lat=20.438&lon=-86.927&units=imperial&appid=eaa7d958886dda1b5fd5aa3be2aa0756";
-const url1 = `https://api.openweathermap.org/data/2.5/weather?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=-1.29&lon=36.82&appid=2aed5d5a23adccd7c990dad86aeec570`
+const url1 = `https://api.openweathermap.org/data/2.5/weather?lat=-1.29&lon=36.82&units=metric&appid=2aed5d5a23adccd7c990dad86aeec570`
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=-1.29&lon=36.82&units=metric&appid=2aed5d5a23adccd7c990dad86aeec570`
 
 const maxTemp = document.querySelector("#temp-msg");
 const todayTemp = document.querySelector("#temperature");
@@ -59,8 +54,8 @@ function displayWeather(data) {
     let hum = data.main.humidity;
     let events = data.weather;
 
-    maxTemp.innerHTML = `${tempMax.toFixed(0)}&deg;F`;
-    todayTemp.innerHTML = `${temp.toFixed(0)}&deg;F`;
+    maxTemp.innerHTML = `${tempMax.toFixed(0)}&deg;C`;
+    todayTemp.innerHTML = `${temp.toFixed(0)}&deg;C`;
     humidity.innerHTML = `${hum}&percnt;`;
     createElements(events, weatherEvents);
 }
@@ -85,7 +80,7 @@ function displayForecast(data) {
     let humForecast = nextDay.main.humidity;
     let eventsFor = nextDay.weather;
 
-    forecastTemp.innerHTML = `${tempForecast.toFixed(0)}&deg;F`;
+    forecastTemp.innerHTML = `${tempForecast.toFixed(0)}&deg;C`;
     forecastHum.innerHTML = `${humForecast}&percnt;`;
     createElements(eventsFor, weatherFor);
 }

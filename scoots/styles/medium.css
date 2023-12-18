@@ -39,9 +39,8 @@
 
   .social {
     border: 10px solid var(--accent3-color);
-    width: fit-content;
+    width: 100%;
     padding: 1rem;
-    width: 250px;
     min-height: 100px;
     overflow: auto;
     position: -webkit-sticky;

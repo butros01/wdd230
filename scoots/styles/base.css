@@ -15,7 +15,7 @@
     
 }
 body {
-    max-width: 1280px;
+    max-width: 1500px;
     width: 100%;
     
     
@@ -154,6 +154,13 @@ nav {
 *Hero area properties *
 *
 *****************************************************************/
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 5px;
+}
 
 .hero img {
     width: 100%;
@@ -161,20 +168,14 @@ nav {
     box-sizing: border-box;
 }
 
-.hero{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    box-sizing: border-box;
-    width: 100%;
-}
+
 
 .herolabel {
-	grid-column: 2/3 ;
+	grid-column: 1/3 ;
     grid-row: 1/2;
     z-index: 1;
 	align-self: center;
 	padding: .5rem;
-    color: #ffffff
 }
 
 .hero picture {
@@ -185,22 +186,32 @@ nav {
 
 .herolabel h1 {
     font-family: Philosopher;
+    text-align: center;
+    padding: 1rem;
+    color: green;
+    background-color: white;
     
 }
 
-.join{
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-    text-decoration: none;
+.button-box{
+    
     font-size: 25px;
     font-weight: 700;
     padding: .5rem;
     margin: 2rem;
     border-radius: 5px;
     border: 1px solid #ffffff;
+    text-align: center;
+    justify-self: center;
+    background-color: var(--accent1-color);
 }
 
-.join:hover {
+.herolabel a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.button-box:hover {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
@@ -220,7 +231,7 @@ h2 {
     text-align: center;
     
 }
-.rentalsInfo, .social {
+.rentalsInfo {
     border: 4px solid var(--accent1-color);
     margin: 1rem;
 }
@@ -250,8 +261,8 @@ h2 {
 .social {
     text-align: center;
     padding: 1rem;
- 
-
+    width: 100%;
+    margin: 1rem;
 }
 
 .weather {
@@ -278,21 +289,21 @@ h2 {
 *****************************************************************/
 table {
 	margin: 10px auto;
-	border: thin solid var(--border);
-	box-shadow: 0 0 10px var(--shadow);
+	border: thin solid var(--accent1-color);
+	box-shadow: 0 0 10px var(--accent2-color);
 	border-collapse: collapse;
 }
 
 caption {
     padding: 10px;
     caption-side: bottom;
-    color: var(--back);
+    /* color: var(--primary-color); */
 	font-size: .85rem;
 }
 
 tr > th {
-	background-color: var(--back2);
-	color: var(--forelight);
+	background-color: var(--accent1-color);
+	color: var(--secondary-color);
 }
 
 th, td {
@@ -300,9 +311,11 @@ th, td {
 	border: 1px solid var(--borderlight);
 }
 
-th:nth-child(1) {
-	background-color: var(--back);
+.th {
+	background-color: var(--primary-color);
 	font-size: larger;
+    letter-spacing: 1px;
+	color: var(--secondary-color);
 }
 
 td {
@@ -310,7 +323,8 @@ td {
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--zebra);
+	background-color: var(--accent3-color);
+    color: var(--secondary-color);
 }
 
 /****************************************************************
