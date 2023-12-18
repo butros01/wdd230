@@ -149,6 +149,35 @@ nav {
 .active {
     background-color: var(--accent2-color);
 }
+
+#maxTemp {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: .5rem 1rem;
+    background-color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-size: .85rem;
+    color: var(--secondary-color);
+
+}
+
+#maxTemp button {
+    float: right;
+    color: var(--accent1-color);
+    border: none;
+    background-color: transparent;
+}
+
+.maxTemp-show {
+    display: block;
+} 
+
+.maxTemp-hide {
+    display: none;
+}
 /****************************************************************
 *
 *Hero area properties *

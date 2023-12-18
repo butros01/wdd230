@@ -10,31 +10,30 @@
     <meta name="author" content=" Butros Kioko">
     <meta property="og:title" content="Scoots ~ a fictitious 🛵 motor scooter rental company">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://unsplash.com/photos/R2QCr4LX0a0">
-    <meta property="og:url" content="https://butros01.github.io/wdd230/">
+    <meta property="og:image" content="https://butros01.github.io/wdd230/scoots/images/hero-large.webp">
+    <meta property="og:url" content="https://butros01.github.io/wdd230/scoots">
     <link rel="stylesheet" href="../scoots/styles/normalize.css">
     <link rel="stylesheet" href="../scoots/styles/base.css">
     <link rel="stylesheet" href="../scoots/styles/medium.css">
     <link rel="stylesheet" href="../scoots/styles/larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Philosopher&display=swapp" rel="stylesheet">
-    
-    <!-- An alternative to hosting your own normalize or reset CSS file s -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../scoots/favicon.ico">
 </head>
-
 <body>
-    <div id="tempInfo">
-        <p>Today's highest temperature <span id="temp-msg"></span></p>
+    <div id="maxTemp">
+        <p> 
+            <button name="close-maxTemp" id="close-maxTemp" aria-label="Close maxTemp">❌</button>
+            Today's highest temperature <span id="temp-msg"></span>
+        </p>
     </div>
     <header>
         <div class="topNav">
             <p><span id="todays-date">Date</span></p>
             <ul class =topNavUl>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a></li>
+                <li><a href="https://twitter.com/i/flow/login" class="fa fa-twitter" target="_blank"></a></li>
+                <li><a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a></li>
             </ul>
         </div>
         <div class="logo">
@@ -99,9 +98,9 @@
         </section>
         <section class="social">
             <h2>Our Socials</h2>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/i/flow/login" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
         </section>
         <section class="weather">
             <h2>Weather Information</h2>
@@ -124,5 +123,6 @@
         <a href="attributions.html">Attributions</a>
         <script src="../scoots/scripts/weather.js"></script>
         <script src="../scoots/scripts/base.js"></script>
+        <script src="../scoots/scripts/temperature.js"></script>
     </footer>
 </body>
