@@ -1,8 +1,10 @@
-@media  screen and (min-width: 900px) {
+@media  screen and (min-width: 1200px) {
     /****************************************************************
 * *
 * Reservations *
 * *
 *****************************************************************/
-
+.rentalsInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
